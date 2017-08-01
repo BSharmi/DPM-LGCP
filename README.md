@@ -9,7 +9,7 @@ Unzip the package. Change the current directory in R to the 'GitHub_code' folder
 
 The following steps need to be followed to obtain TF regulatory modules in different chromatin states - 
 
-1. In R console, run the command  source(paste0(workpath,"/script_generate_TF_peaks_in_diHMM_states_conditional_merged.R")) where work path is the full file path to the 'GitHub_code' directory, e.g.
+1. In R console, run the command below where 'workpath' is the full file path to the 'GitHub_code' directory, e.g.
 
 
 ```
