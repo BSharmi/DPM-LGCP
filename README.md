@@ -14,14 +14,14 @@ The following steps need to be followed to obtain TF regulatory modules in diffe
 
 ```
 > workpath = "/Users/sharmibanerjee/Documents/Summer2017/GitHub_code/"
-> source(paste0(workpath,"/main/script_generate_TF_peaks_in_diHMM_states_conditional_merged.R"))
+> source(paste0(workpath,"/main/script_generate_TF_peaks_in_diHMM_states.R"))
 > get_TF_peaks_in_states_conditional_threshold(workpath)
 ```
-After step 1 completes, RData files should be generated in the "results" folder.
+This step reads diHMM and peak files and selects those TFs in each chromatin state window that contain peaks greater than the threshold. After step 1 completes, RData files should be generated in the "results" folder.
 
 2. Run the following commands on R console to generate clustering results
 ```
-> source(paste0(workpath,"/main/script_genevscluster_each_diHMM_chromatin_state.R"))
+> source(paste0(workpath,"/main/script_get_clusters_for_each_diHMM_state.R"))
 > get_clusters_for_each_chromatin_state(workpath)
 ```
 
