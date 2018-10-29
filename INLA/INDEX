@@ -1,0 +1,159 @@
+                        Calculate sensitivity measurements
+BivMetaAnalysis         Bivariate Meta Analysis
+Cancer                  ~~ data name/kind ... ~~
+Drivers                 Time series with seasonal effect
+Epil                    Repeated measures on Poisson counts
+Germany                 Disease Mapping
+INLA-package            Integrated Nested Laplace Approximation
+Kidney                  Kidney infection data
+Leuk                    The Leukemia data
+Munich                  The Munich rent data
+Oral                    ~~ data name/kind ... ~~
+PRborder                The PRborder data
+PRprec                  The PRprec data
+SPDEtoy                 toy simulated data set for the SPDE tutorial
+Salm                    Extra-Poisson variation in dose-response study
+Scotland                Conditional Autoregressive (CAR) model for
+                        disease mapping
+Seeds                   Factorial design
+Surg                    Surgical: Institutional ranking
+SurvSim                 Survival data
+Tokyo                   Binomial time series
+Zambia                  Semiparametric regression
+as.inla.mesh.segment    Convert 'sp' curve objects to
+                        'inla.mesh.segment' objects.
+contrib.sd              Computes the standard deviation for the
+                        structured (random) effects in an INLA model
+control.compute         Control variables in control.compute
+control.expert          Control variables in control.expert
+control.family          Control variables in control.family
+control.fixed           Control variables in control.fixed
+control.group           Control variables in control.group
+control.hazard          Control variables in control.hazard
+control.inla            Control variables in control.inla
+control.lincomb         Control variables in control.lincomb
+control.link            Control variables in control.link
+control.mix             Control variables in control.mix
+control.mode            Control variables in control.mode
+control.predictor       Control variables in control.predictor
+control.results         Control variables in control.results
+control.update          Control variables in control.update
+debug.graph             Debug a graph-file
+extract.groups          Extract tagged boundary/internal segments.
+f                       Define general Gaussian models in the INLA
+                        formula
+geobugs2inla            INLA utility functions
+graph2matrix            Construct a neighbour-matrix from a 'graph'
+idx                     Convert indexes
+inla                    Bayesian analysis of structured additive models
+inla.ar.pacf2phi        Convert between parameterizations for the AR(p)
+                        model
+inla.as.sparse          Convert a matrix or sparse matrix into the
+                        sparse formate used by INLA
+inla.changelog          inla.changelog
+inla.collect.results    Collect results from a inla-call
+inla.compare.results    Compare INLA and MCMC results
+inla.coxph              Convert a Cox proportional hazard model into
+                        Poisson regression
+inla.cpo                Improved estimates for the CPO/PIT-values
+inla.dev.new            Opens a new device
+inla.doc                View documentation
+inla.extract.el         Extract elements by matching name from
+                        container objects.
+inla.fmesher.smorg      Compute various mesh related quantities.
+inla.generate.colors    Generate text RGB color specifications.
+inla.group              Group or cluster covariates
+inla.hyperpar           Improved estimates for the hyperparameters
+inla.hyperpar.sample    Produce samples from the approximated joint
+                        posterior for the hyperparameters
+inla.ks.plot            Kolmogorov-Smirnov Test Plots
+inla.load               Load or source a file
+inla.matern.cov         Numerical evaluation of Matern and related
+                        covariance functions.
+inla.mesh.1d            Function space definition objects for 1D SPDE
+                        models.
+inla.mesh.1d.A          Mapping matrix for 1D meshes
+inla.mesh.2d            High-quality triangulations
+inla.mesh.basis         Basis functions for inla.mesh
+inla.mesh.boundary      Constraint segment extraction for inla.mesh
+inla.mesh.create        Low level function for high-quality
+                        triangulations
+inla.mesh.deriv         Directional derivative matrices for functions
+                        on meshes.
+inla.mesh.fem           Finite element matrices
+inla.mesh.lattice       Lattice grids for inla.mesh
+inla.mesh.map           Coordinate mappings for 'inla.mesh'
+                        projections.
+inla.mesh.project       Methods for projecting to/from an inla.mesh
+inla.mesh.query         High-quality triangulations
+inla.mesh.segment       Constraint segments for inla.mesh
+inla.models             Valid models in INLA
+inla.nonconvex.hull     Nonconvex set extensions.
+inla.option             Set and get global options for INLA
+inla.pc.ar              Utility functions for the PC prior for a an
+                        AR(p) model
+inla.pc.cormat          Utility functions for the PC prior for a
+                        correlation matrix
+inla.posterior.sample   Generate samples from an approximated posterior
+                        of a fitted model
+inla.qstat              Control and view a remote inla-queue
+inla.reorderings        Reorderings methods for sparse matrices
+inla.rerun              Rerun an analysis
+inla.row.kron           Row-wise Kronecker products
+inla.sens               Testing code for sensitivity
+inla.simplify.curve     Recursive curve simplification.
+inla.spde.make.A        Observation/prediction matrices for mesh
+                        models.
+inla.spde.make.block.A
+                        Observation matrices for mesh models.
+inla.spde.make.index    SPDE model index vector generation
+inla.spde.models        List SPDE models supported by inla.spde objects
+inla.spde.precision     Precision matrices for SPDE models
+inla.spde.result        SPDE result extraction from INLA estimation
+                        results
+inla.spde.sample        Sample from SPDE models
+inla.spde1.create       Old SPDE model objects for INLA
+inla.spde2.generic      Generic spde2 model creation.
+inla.spde2.matern       Matern SPDE model object for INLA
+inla.spde2.matern.sd.basis
+                        Approximate variance-compensating basis
+                        functions
+inla.ssh.copy.id        Setup remote computing
+inla.stack              Data stacking for advanced INLA models
+inla.surv               Create a Survival Object for INLA
+inla.upgrade            Upgrade the INLA-package
+inla.version            Show the version of the INLA-package
+lattice2node            Functions to define mapping between a lattice
+                        and nodes
+lines.inla.mesh.segment
+                        Draw 'inla.mesh.segment' objects.
+link                    Link functions in INLA
+make.lincomb            Create linear combinations
+marginal                Functions which operates on marginals
+nwEngland               The New England map
+param2.matern.orig      Parameter settings for 'inla.spde2.matern'
+                        models.
+pc.cor0                 Utility functions for the PC prior for
+                        correlation in AR(1)
+pc.cor1                 Utility functions for the PC prior for
+                        correlation in AR(1)
+pc.ddof                 PC-prior for dof in a standarized Student-t
+pc.multvar              Multivariate PC priors
+pc.prec                 Utility functions for the PC prior for the
+                        precision
+plot.inla               Default INLA plotting
+plot.inla.mesh          Draw a triangulation mesh object
+plot.inla.trimesh       Low level triangulation mesh plotting
+print.inla              Print a INLA fit
+qinv                    Computes (parts of) the inverse of a SPD sparse
+                        matrix
+qreordering             Compute the reordering using the GMRFLib
+                        implementation
+qsample                 Generate samples from a GMRF using the GMRFLib
+                        implementation
+qsolve                  Solves linear SPD systems
+read.graph              Read and write a graph-object
+rgeneric.define         rgeneric models
+scale.model             Scale an intrinsic GMRF model
+summary.inla            Summary for a INLA fit
+summary.inla.mesh       Summarizing triangular mesh objects

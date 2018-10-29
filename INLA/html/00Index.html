@@ -1,0 +1,1074 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>R: Functions which Allow to Perform Full Bayesian Analysis of
+Latent Gaussian Models using Integrated Nested Laplace
+Approximations</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+<h1> Functions which Allow to Perform Full Bayesian Analysis of
+Latent Gaussian Models using Integrated Nested Laplace
+Approximations
+<img class="toplogo" src="../../../doc/html/Rlogo.svg" alt="[R logo]" />
+</h1>
+<hr/>
+<div style="text-align: center;">
+<a href="../../../doc/html/packages.html"><img class="arrow" src="../../../doc/html/left.jpg" alt="[Up]" /></a>
+<a href="../../../doc/html/index.html"><img class="arrow" src="../../../doc/html/up.jpg" alt="[Top]" /></a>
+</div><h2>Documentation for package &lsquo;INLA&rsquo; version 0.0-1468872408</h2>
+
+<ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
+<li><a href="../doc/index.html">User guides, package vignettes and other documentation.</a></li>
+<li><a href="../demo">Code demos</a>.  Use <a href="../../utils/help/demo">demo()</a> to run them.</li>
+</ul>
+
+<h2>Help Pages</h2>
+
+
+<p style="text-align: center;">
+<a href="# "> </a>
+<a href="#A">A</a>
+<a href="#B">B</a>
+<a href="#C">C</a>
+<a href="#D">D</a>
+<a href="#E">E</a>
+<a href="#F">F</a>
+<a href="#G">G</a>
+<a href="#H">H</a>
+<a href="#I">I</a>
+<a href="#K">K</a>
+<a href="#L">L</a>
+<a href="#M">M</a>
+<a href="#N">N</a>
+<a href="#O">O</a>
+<a href="#P">P</a>
+<a href="#Q">Q</a>
+<a href="#R">R</a>
+<a href="#S">S</a>
+<a href="#T">T</a>
+<a href="#V">V</a>
+<a href="#W">W</a>
+<a href="#Z">Z</a>
+</p>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="INLA-package.html">INLA-package</a></td>
+<td>Integrated Nested Laplace Approximation</td></tr>
+</table>
+
+<h2><a name="A">-- A --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="pc-ar.html">ar.dpacf</a></td>
+<td>Utility functions for the PC prior for a an AR(p) model</td></tr>
+<tr><td style="width: 25%;"><a href="ar.html">ar.pacf2acf</a></td>
+<td>Convert between parameterizations for the AR(p) model</td></tr>
+<tr><td style="width: 25%;"><a href="ar.html">ar.pacf2phi</a></td>
+<td>Convert between parameterizations for the AR(p) model</td></tr>
+<tr><td style="width: 25%;"><a href="ar.html">ar.phi2acf</a></td>
+<td>Convert between parameterizations for the AR(p) model</td></tr>
+<tr><td style="width: 25%;"><a href="ar.html">ar.phi2pacf</a></td>
+<td>Convert between parameterizations for the AR(p) model</td></tr>
+<tr><td style="width: 25%;"><a href="pc-ar.html">ar.rpacf</a></td>
+<td>Utility functions for the PC prior for a an AR(p) model</td></tr>
+<tr><td style="width: 25%;"><a href="as.inla.mesh.segment.html">as.inla.mesh.segment</a></td>
+<td>Convert 'sp' curve objects to 'inla.mesh.segment' objects.</td></tr>
+<tr><td style="width: 25%;"><a href="as.inla.mesh.segment.html">as.inla.mesh.segment.Line</a></td>
+<td>Convert 'sp' curve objects to 'inla.mesh.segment' objects.</td></tr>
+<tr><td style="width: 25%;"><a href="as.inla.mesh.segment.html">as.inla.mesh.segment.Lines</a></td>
+<td>Convert 'sp' curve objects to 'inla.mesh.segment' objects.</td></tr>
+<tr><td style="width: 25%;"><a href="as.inla.mesh.segment.html">as.inla.mesh.segment.Polygon</a></td>
+<td>Convert 'sp' curve objects to 'inla.mesh.segment' objects.</td></tr>
+<tr><td style="width: 25%;"><a href="as.inla.mesh.segment.html">as.inla.mesh.segment.Polygons</a></td>
+<td>Convert 'sp' curve objects to 'inla.mesh.segment' objects.</td></tr>
+<tr><td style="width: 25%;"><a href="as.inla.mesh.segment.html">as.inla.mesh.segment.SpatialLines</a></td>
+<td>Convert 'sp' curve objects to 'inla.mesh.segment' objects.</td></tr>
+<tr><td style="width: 25%;"><a href="as.inla.mesh.segment.html">as.inla.mesh.segment.SpatialLinesDataFrame</a></td>
+<td>Convert 'sp' curve objects to 'inla.mesh.segment' objects.</td></tr>
+<tr><td style="width: 25%;"><a href="as.inla.mesh.segment.html">as.inla.mesh.segment.SpatialPolygons</a></td>
+<td>Convert 'sp' curve objects to 'inla.mesh.segment' objects.</td></tr>
+<tr><td style="width: 25%;"><a href="as.inla.mesh.segment.html">as.inla.mesh.segment.SpatialPolygonsDataFrame</a></td>
+<td>Convert 'sp' curve objects to 'inla.mesh.segment' objects.</td></tr>
+<tr><td style="width: 25%;"><a href="surv.html">as.inla.surv</a></td>
+<td>Create a Survival Object for INLA</td></tr>
+</table>
+
+<h2><a name="B">-- B --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="BivMetaAnalysis.html">BivMetaAnalysis</a></td>
+<td>Bivariate Meta Analysis</td></tr>
+</table>
+
+<h2><a name="C">-- C --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="Cancer.html">Cancer</a></td>
+<td>~~ data name/kind ... ~~</td></tr>
+<tr><td style="width: 25%;"><a href="coxph.html">cbind.data.frames</a></td>
+<td>Convert a Cox proportional hazard model into Poisson regression</td></tr>
+<tr><td style="width: 25%;"><a href="changelog.html">changelog</a></td>
+<td>inla.changelog</td></tr>
+<tr><td style="width: 25%;"><a href="collect.results.html">collect.results</a></td>
+<td>Collect results from a inla-call</td></tr>
+<tr><td style="width: 25%;"><a href="compare.results.html">compare.results</a></td>
+<td>Compare INLA and MCMC results</td></tr>
+<tr><td style="width: 25%;"><a href="contributed-1.html">contrib.sd</a></td>
+<td>Computes the standard deviation for the structured (random) effects in an INLA model</td></tr>
+<tr><td style="width: 25%;"><a href="control.compute.html">control.compute</a></td>
+<td>Control variables in control.compute</td></tr>
+<tr><td style="width: 25%;"><a href="control.compute.html">control.compute.default</a></td>
+<td>Control variables in control.compute</td></tr>
+<tr><td style="width: 25%;"><a href="control.expert.html">control.expert</a></td>
+<td>Control variables in control.expert</td></tr>
+<tr><td style="width: 25%;"><a href="control.expert.html">control.expert.default</a></td>
+<td>Control variables in control.expert</td></tr>
+<tr><td style="width: 25%;"><a href="control.family.html">control.family</a></td>
+<td>Control variables in control.family</td></tr>
+<tr><td style="width: 25%;"><a href="control.family.html">control.family.default</a></td>
+<td>Control variables in control.family</td></tr>
+<tr><td style="width: 25%;"><a href="control.fixed.html">control.fixed</a></td>
+<td>Control variables in control.fixed</td></tr>
+<tr><td style="width: 25%;"><a href="control.fixed.html">control.fixed.default</a></td>
+<td>Control variables in control.fixed</td></tr>
+<tr><td style="width: 25%;"><a href="control.group.html">control.group</a></td>
+<td>Control variables in control.group</td></tr>
+<tr><td style="width: 25%;"><a href="control.group.html">control.group.default</a></td>
+<td>Control variables in control.group</td></tr>
+<tr><td style="width: 25%;"><a href="control.hazard.html">control.hazard</a></td>
+<td>Control variables in control.hazard</td></tr>
+<tr><td style="width: 25%;"><a href="control.hazard.html">control.hazard.default</a></td>
+<td>Control variables in control.hazard</td></tr>
+<tr><td style="width: 25%;"><a href="control.inla.html">control.inla</a></td>
+<td>Control variables in control.inla</td></tr>
+<tr><td style="width: 25%;"><a href="control.inla.html">control.inla.default</a></td>
+<td>Control variables in control.inla</td></tr>
+<tr><td style="width: 25%;"><a href="control.lincomb.html">control.lincomb</a></td>
+<td>Control variables in control.lincomb</td></tr>
+<tr><td style="width: 25%;"><a href="control.lincomb.html">control.lincomb.default</a></td>
+<td>Control variables in control.lincomb</td></tr>
+<tr><td style="width: 25%;"><a href="control.link.html">control.link</a></td>
+<td>Control variables in control.link</td></tr>
+<tr><td style="width: 25%;"><a href="control.link.html">control.link.default</a></td>
+<td>Control variables in control.link</td></tr>
+<tr><td style="width: 25%;"><a href="control.mix.html">control.mix</a></td>
+<td>Control variables in control.mix</td></tr>
+<tr><td style="width: 25%;"><a href="control.mix.html">control.mix.default</a></td>
+<td>Control variables in control.mix</td></tr>
+<tr><td style="width: 25%;"><a href="control.mode.html">control.mode</a></td>
+<td>Control variables in control.mode</td></tr>
+<tr><td style="width: 25%;"><a href="control.mode.html">control.mode.default</a></td>
+<td>Control variables in control.mode</td></tr>
+<tr><td style="width: 25%;"><a href="control.predictor.html">control.predictor</a></td>
+<td>Control variables in control.predictor</td></tr>
+<tr><td style="width: 25%;"><a href="control.predictor.html">control.predictor.default</a></td>
+<td>Control variables in control.predictor</td></tr>
+<tr><td style="width: 25%;"><a href="control.results.html">control.results</a></td>
+<td>Control variables in control.results</td></tr>
+<tr><td style="width: 25%;"><a href="control.results.html">control.results.default</a></td>
+<td>Control variables in control.results</td></tr>
+<tr><td style="width: 25%;"><a href="control.update.html">control.update</a></td>
+<td>Control variables in control.update</td></tr>
+<tr><td style="width: 25%;"><a href="control.update.html">control.update.default</a></td>
+<td>Control variables in control.update</td></tr>
+<tr><td style="width: 25%;"><a href="pc-cormat.html">cormat.dim2p</a></td>
+<td>Utility functions for the PC prior for a correlation matrix</td></tr>
+<tr><td style="width: 25%;"><a href="pc-cormat.html">cormat.dtheta</a></td>
+<td>Utility functions for the PC prior for a correlation matrix</td></tr>
+<tr><td style="width: 25%;"><a href="pc-cormat.html">cormat.p2dim</a></td>
+<td>Utility functions for the PC prior for a correlation matrix</td></tr>
+<tr><td style="width: 25%;"><a href="pc-cormat.html">cormat.permute</a></td>
+<td>Utility functions for the PC prior for a correlation matrix</td></tr>
+<tr><td style="width: 25%;"><a href="pc-cormat.html">cormat.R2r</a></td>
+<td>Utility functions for the PC prior for a correlation matrix</td></tr>
+<tr><td style="width: 25%;"><a href="pc-cormat.html">cormat.r2R</a></td>
+<td>Utility functions for the PC prior for a correlation matrix</td></tr>
+<tr><td style="width: 25%;"><a href="pc-cormat.html">cormat.R2theta</a></td>
+<td>Utility functions for the PC prior for a correlation matrix</td></tr>
+<tr><td style="width: 25%;"><a href="pc-cormat.html">cormat.r2theta</a></td>
+<td>Utility functions for the PC prior for a correlation matrix</td></tr>
+<tr><td style="width: 25%;"><a href="pc-cormat.html">cormat.rtheta</a></td>
+<td>Utility functions for the PC prior for a correlation matrix</td></tr>
+<tr><td style="width: 25%;"><a href="pc-cormat.html">cormat.theta2R</a></td>
+<td>Utility functions for the PC prior for a correlation matrix</td></tr>
+<tr><td style="width: 25%;"><a href="pc-cormat.html">cormat.theta2r</a></td>
+<td>Utility functions for the PC prior for a correlation matrix</td></tr>
+<tr><td style="width: 25%;"><a href="coxph.html">coxph</a></td>
+<td>Convert a Cox proportional hazard model into Poisson regression</td></tr>
+<tr><td style="width: 25%;"><a href="cpo.html">cpo.inla</a></td>
+<td>Improved estimates for the CPO/PIT-values</td></tr>
+</table>
+
+<h2><a name="D">-- D --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="debug.graph.html">debug.graph</a></td>
+<td>Debug a graph-file</td></tr>
+<tr><td style="width: 25%;"><a href="marginal.html">dmarginal</a></td>
+<td>Functions which operates on marginals</td></tr>
+<tr><td style="width: 25%;"><a href="Drivers.html">Drivers</a></td>
+<td>Time series with seasonal effect</td></tr>
+</table>
+
+<h2><a name="E">-- E --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="marginal.html">emarginal</a></td>
+<td>Functions which operates on marginals</td></tr>
+<tr><td style="width: 25%;"><a href="Epil.html">Epil</a></td>
+<td>Repeated measures on Poisson counts</td></tr>
+<tr><td style="width: 25%;"><a href="extract.groups.html">extract.groups</a></td>
+<td>Extract tagged boundary/internal segments.</td></tr>
+<tr><td style="width: 25%;"><a href="extract.groups.html">extract.groups.inla.mesh.segment</a></td>
+<td>Extract tagged boundary/internal segments.</td></tr>
+</table>
+
+<h2><a name="F">-- F --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="f.html">f</a></td>
+<td>Define general Gaussian models in the INLA formula</td></tr>
+</table>
+
+<h2><a name="G">-- G --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="graph.convert.html">geobugs2inla</a></td>
+<td>INLA utility functions</td></tr>
+<tr><td style="width: 25%;"><a href="Germany.html">Germany</a></td>
+<td>Disease Mapping</td></tr>
+<tr><td style="width: 25%;"><a href="graph.matrix.html">graph2matrix</a></td>
+<td>Construct a neighbour-matrix from a 'graph'</td></tr>
+</table>
+
+<h2><a name="H">-- H --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="marginal.html">hpdmarginal</a></td>
+<td>Functions which operates on marginals</td></tr>
+<tr><td style="width: 25%;"><a href="hyperpar.html">hyperpar.inla</a></td>
+<td>Improved estimates for the hyperparameters</td></tr>
+<tr><td style="width: 25%;"><a href="sampler.html">hyperpar.sample</a></td>
+<td>Produce samples from the approximated joint posterior for the hyperparameters</td></tr>
+<tr><td style="width: 25%;"><a href="sampler.html">hyperpar.sampler</a></td>
+<td>Produce samples from the approximated joint posterior for the hyperparameters</td></tr>
+</table>
+
+<h2><a name="I">-- I --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="idx.html">idx</a></td>
+<td>Convert indexes</td></tr>
+<tr><td style="width: 25%;"><a href="INLA-package.html">INLA</a></td>
+<td>Integrated Nested Laplace Approximation</td></tr>
+<tr><td style="width: 25%;"><a href="inla.html">inla</a></td>
+<td>Bayesian analysis of structured additive models</td></tr>
+<tr><td style="width: 25%;"><a href="ar.html">inla.ar.pacf2acf</a></td>
+<td>Convert between parameterizations for the AR(p) model</td></tr>
+<tr><td style="width: 25%;"><a href="ar.html">inla.ar.pacf2phi</a></td>
+<td>Convert between parameterizations for the AR(p) model</td></tr>
+<tr><td style="width: 25%;"><a href="ar.html">inla.ar.phi2acf</a></td>
+<td>Convert between parameterizations for the AR(p) model</td></tr>
+<tr><td style="width: 25%;"><a href="ar.html">inla.ar.phi2pacf</a></td>
+<td>Convert between parameterizations for the AR(p) model</td></tr>
+<tr><td style="width: 25%;"><a href="sm.html">inla.as.dgTMatrix</a></td>
+<td>Convert a matrix or sparse matrix into the sparse formate used by INLA</td></tr>
+<tr><td style="width: 25%;"><a href="sm.html">inla.as.sparse</a></td>
+<td>Convert a matrix or sparse matrix into the sparse formate used by INLA</td></tr>
+<tr><td style="width: 25%;"><a href="changelog.html">inla.changelog</a></td>
+<td>inla.changelog</td></tr>
+<tr><td style="width: 25%;"><a href="changelog.html">inla.changes</a></td>
+<td>inla.changelog</td></tr>
+<tr><td style="width: 25%;"><a href="collect.results.html">inla.collect.results</a></td>
+<td>Collect results from a inla-call</td></tr>
+<tr><td style="width: 25%;"><a href="compare.results.html">inla.compare.results</a></td>
+<td>Compare INLA and MCMC results</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.segment.html">inla.contour.segment</a></td>
+<td>Constraint segments for inla.mesh</td></tr>
+<tr><td style="width: 25%;"><a href="contributed-1.html">inla.contrib.sd</a></td>
+<td>Computes the standard deviation for the structured (random) effects in an INLA model</td></tr>
+<tr><td style="width: 25%;"><a href="control.compute.html">inla.control.compute</a></td>
+<td>Control variables in control.compute</td></tr>
+<tr><td style="width: 25%;"><a href="control.expert.html">inla.control.expert</a></td>
+<td>Control variables in control.expert</td></tr>
+<tr><td style="width: 25%;"><a href="control.family.html">inla.control.family</a></td>
+<td>Control variables in control.family</td></tr>
+<tr><td style="width: 25%;"><a href="control.fixed.html">inla.control.fixed</a></td>
+<td>Control variables in control.fixed</td></tr>
+<tr><td style="width: 25%;"><a href="control.group.html">inla.control.group</a></td>
+<td>Control variables in control.group</td></tr>
+<tr><td style="width: 25%;"><a href="control.hazard.html">inla.control.hazard</a></td>
+<td>Control variables in control.hazard</td></tr>
+<tr><td style="width: 25%;"><a href="control.inla.html">inla.control.inla</a></td>
+<td>Control variables in control.inla</td></tr>
+<tr><td style="width: 25%;"><a href="control.lincomb.html">inla.control.lincomb</a></td>
+<td>Control variables in control.lincomb</td></tr>
+<tr><td style="width: 25%;"><a href="control.link.html">inla.control.link</a></td>
+<td>Control variables in control.link</td></tr>
+<tr><td style="width: 25%;"><a href="control.mix.html">inla.control.mix</a></td>
+<td>Control variables in control.mix</td></tr>
+<tr><td style="width: 25%;"><a href="control.mode.html">inla.control.mode</a></td>
+<td>Control variables in control.mode</td></tr>
+<tr><td style="width: 25%;"><a href="control.predictor.html">inla.control.predictor</a></td>
+<td>Control variables in control.predictor</td></tr>
+<tr><td style="width: 25%;"><a href="control.results.html">inla.control.results</a></td>
+<td>Control variables in control.results</td></tr>
+<tr><td style="width: 25%;"><a href="control.update.html">inla.control.update</a></td>
+<td>Control variables in control.update</td></tr>
+<tr><td style="width: 25%;"><a href="coxph.html">inla.coxph</a></td>
+<td>Convert a Cox proportional hazard model into Poisson regression</td></tr>
+<tr><td style="width: 25%;"><a href="cpo.html">inla.cpo</a></td>
+<td>Improved estimates for the CPO/PIT-values</td></tr>
+<tr><td style="width: 25%;"><a href="inla.stack.html">inla.data.stack</a></td>
+<td>Data stacking for advanced INLA models</td></tr>
+<tr><td style="width: 25%;"><a href="inla.stack.html">inla.data.stack.info</a></td>
+<td>Data stacking for advanced INLA models</td></tr>
+<tr><td style="width: 25%;"><a href="debug.graph.html">inla.debug.graph</a></td>
+<td>Debug a graph-file</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.create.html">inla.delaunay</a></td>
+<td>Low level function for high-quality triangulations</td></tr>
+<tr><td style="width: 25%;"><a href="dev.new.html">inla.dev.new</a></td>
+<td>Opens a new device</td></tr>
+<tr><td style="width: 25%;"><a href="marginal.html">inla.dmarginal</a></td>
+<td>Functions which operates on marginals</td></tr>
+<tr><td style="width: 25%;"><a href="doc.html">inla.doc</a></td>
+<td>View documentation</td></tr>
+<tr><td style="width: 25%;"><a href="marginal.html">inla.emarginal</a></td>
+<td>Functions which operates on marginals</td></tr>
+<tr><td style="width: 25%;"><a href="inla.extract.el.html">inla.extract.el</a></td>
+<td>Extract elements by matching name from container objects.</td></tr>
+<tr><td style="width: 25%;"><a href="inla.extract.el.html">inla.extract.el.data.frame</a></td>
+<td>Extract elements by matching name from container objects.</td></tr>
+<tr><td style="width: 25%;"><a href="inla.extract.el.html">inla.extract.el.list</a></td>
+<td>Extract elements by matching name from container objects.</td></tr>
+<tr><td style="width: 25%;"><a href="inla.extract.el.html">inla.extract.el.matrix</a></td>
+<td>Extract elements by matching name from container objects.</td></tr>
+<tr><td style="width: 25%;"><a href="inla.fmesher.smorg.html">inla.fmesher.smorg</a></td>
+<td>Compute various mesh related quantities.</td></tr>
+<tr><td style="width: 25%;"><a href="inla.generate.colors.html">inla.generate.colors</a></td>
+<td>Generate text RGB color specifications.</td></tr>
+<tr><td style="width: 25%;"><a href="graph.convert.html">inla.geobugs2inla</a></td>
+<td>INLA utility functions</td></tr>
+<tr><td style="width: 25%;"><a href="options.html">inla.getOption</a></td>
+<td>Set and get global options for INLA</td></tr>
+<tr><td style="width: 25%;"><a href="read.graph.html">inla.graph</a></td>
+<td>Read and write a graph-object</td></tr>
+<tr><td style="width: 25%;"><a href="graph.matrix.html">inla.graph2matrix</a></td>
+<td>Construct a neighbour-matrix from a 'graph'</td></tr>
+<tr><td style="width: 25%;"><a href="group.html">inla.group</a></td>
+<td>Group or cluster covariates</td></tr>
+<tr><td style="width: 25%;"><a href="marginal.html">inla.hpdmarginal</a></td>
+<td>Functions which operates on marginals</td></tr>
+<tr><td style="width: 25%;"><a href="hyperpar.html">inla.hyperpar</a></td>
+<td>Improved estimates for the hyperparameters</td></tr>
+<tr><td style="width: 25%;"><a href="sampler.html">inla.hyperpar.sample</a></td>
+<td>Produce samples from the approximated joint posterior for the hyperparameters</td></tr>
+<tr><td style="width: 25%;"><a href="sampler.html">inla.hyperpar.sampler</a></td>
+<td>Produce samples from the approximated joint posterior for the hyperparameters</td></tr>
+<tr><td style="width: 25%;"><a href="idx.html">inla.idx</a></td>
+<td>Convert indexes</td></tr>
+<tr><td style="width: 25%;"><a href="doc.html">inla.inla.doc</a></td>
+<td>View documentation</td></tr>
+<tr><td style="width: 25%;"><a href="residuals.html">inla.ks.plot</a></td>
+<td>Kolmogorov-Smirnov Test Plots</td></tr>
+<tr><td style="width: 25%;"><a href="lattice2node.html">inla.lattice2node</a></td>
+<td>Functions to define mapping between a lattice and nodes</td></tr>
+<tr><td style="width: 25%;"><a href="lattice2node.html">inla.lattice2node.mapping</a></td>
+<td>Functions to define mapping between a lattice and nodes</td></tr>
+<tr><td style="width: 25%;"><a href="link-functions.html">inla.link</a></td>
+<td>Link functions in INLA</td></tr>
+<tr><td style="width: 25%;"><a href="link-functions.html">inla.link.cauchit</a></td>
+<td>Link functions in INLA</td></tr>
+<tr><td style="width: 25%;"><a href="link-functions.html">inla.link.cloglog</a></td>
+<td>Link functions in INLA</td></tr>
+<tr><td style="width: 25%;"><a href="link-functions.html">inla.link.identity</a></td>
+<td>Link functions in INLA</td></tr>
+<tr><td style="width: 25%;"><a href="link-functions.html">inla.link.invalid</a></td>
+<td>Link functions in INLA</td></tr>
+<tr><td style="width: 25%;"><a href="link-functions.html">inla.link.invcauchit</a></td>
+<td>Link functions in INLA</td></tr>
+<tr><td style="width: 25%;"><a href="link-functions.html">inla.link.invcloglog</a></td>
+<td>Link functions in INLA</td></tr>
+<tr><td style="width: 25%;"><a href="link-functions.html">inla.link.invidentity</a></td>
+<td>Link functions in INLA</td></tr>
+<tr><td style="width: 25%;"><a href="link-functions.html">inla.link.invinvalid</a></td>
+<td>Link functions in INLA</td></tr>
+<tr><td style="width: 25%;"><a href="link-functions.html">inla.link.invlog</a></td>
+<td>Link functions in INLA</td></tr>
+<tr><td style="width: 25%;"><a href="link-functions.html">inla.link.invlogit</a></td>
+<td>Link functions in INLA</td></tr>
+<tr><td style="width: 25%;"><a href="link-functions.html">inla.link.invloglog</a></td>
+<td>Link functions in INLA</td></tr>
+<tr><td style="width: 25%;"><a href="link-functions.html">inla.link.invprobit</a></td>
+<td>Link functions in INLA</td></tr>
+<tr><td style="width: 25%;"><a href="link-functions.html">inla.link.invtan</a></td>
+<td>Link functions in INLA</td></tr>
+<tr><td style="width: 25%;"><a href="link-functions.html">inla.link.log</a></td>
+<td>Link functions in INLA</td></tr>
+<tr><td style="width: 25%;"><a href="link-functions.html">inla.link.logit</a></td>
+<td>Link functions in INLA</td></tr>
+<tr><td style="width: 25%;"><a href="link-functions.html">inla.link.loglog</a></td>
+<td>Link functions in INLA</td></tr>
+<tr><td style="width: 25%;"><a href="link-functions.html">inla.link.probit</a></td>
+<td>Link functions in INLA</td></tr>
+<tr><td style="width: 25%;"><a href="link-functions.html">inla.link.tan</a></td>
+<td>Link functions in INLA</td></tr>
+<tr><td style="width: 25%;"><a href="load.html">inla.load</a></td>
+<td>Load or source a file</td></tr>
+<tr><td style="width: 25%;"><a href="lincomb.html">inla.make.lincomb</a></td>
+<td>Create linear combinations</td></tr>
+<tr><td style="width: 25%;"><a href="lincomb.html">inla.make.lincombs</a></td>
+<td>Create linear combinations</td></tr>
+<tr><td style="width: 25%;"><a href="marginal.html">inla.marginal</a></td>
+<td>Functions which operates on marginals</td></tr>
+<tr><td style="width: 25%;"><a href="marginal.html">inla.marginal.expectation</a></td>
+<td>Functions which operates on marginals</td></tr>
+<tr><td style="width: 25%;"><a href="marginal.html">inla.marginal.transform</a></td>
+<td>Functions which operates on marginals</td></tr>
+<tr><td style="width: 25%;"><a href="inla.matern.cov.html">inla.matern.cov</a></td>
+<td>Numerical evaluation of Matern and related covariance functions.</td></tr>
+<tr><td style="width: 25%;"><a href="inla.matern.cov.html">inla.matern.cov.s2</a></td>
+<td>Numerical evaluation of Matern and related covariance functions.</td></tr>
+<tr><td style="width: 25%;"><a href="lattice2node.html">inla.matrix2vector</a></td>
+<td>Functions to define mapping between a lattice and nodes</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.create.html">inla.mesh</a></td>
+<td>Low level function for high-quality triangulations</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.1d.html">inla.mesh.1d</a></td>
+<td>Function space definition objects for 1D SPDE models.</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.1d.A.html">inla.mesh.1d.A</a></td>
+<td>Mapping matrix for 1D meshes</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.1d.A.html">inla.mesh.1d.bary</a></td>
+<td>Mapping matrix for 1D meshes</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.fem.html">inla.mesh.1d.fem</a></td>
+<td>Finite element matrices</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.2d.html">inla.mesh.2d</a></td>
+<td>High-quality triangulations</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.basis.html">inla.mesh.basis</a></td>
+<td>Basis functions for inla.mesh</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.boundary.html">inla.mesh.boundary</a></td>
+<td>Constraint segment extraction for inla.mesh</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.create.html">inla.mesh.create</a></td>
+<td>Low level function for high-quality triangulations</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.deriv.html">inla.mesh.deriv</a></td>
+<td>Directional derivative matrices for functions on meshes.</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.fem.html">inla.mesh.fem</a></td>
+<td>Finite element matrices</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.boundary.html">inla.mesh.interior</a></td>
+<td>Constraint segment extraction for inla.mesh</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.lattice.html">inla.mesh.lattice</a></td>
+<td>Lattice grids for inla.mesh</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.map.html">inla.mesh.map</a></td>
+<td>Coordinate mappings for 'inla.mesh' projections.</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.map.html">inla.mesh.map.lim</a></td>
+<td>Coordinate mappings for 'inla.mesh' projections.</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.project.html">inla.mesh.project</a></td>
+<td>Methods for projecting to/from an inla.mesh</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.project.html">inla.mesh.project.inla.mesh</a></td>
+<td>Methods for projecting to/from an inla.mesh</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.project.html">inla.mesh.project.inla.mesh.1d</a></td>
+<td>Methods for projecting to/from an inla.mesh</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.project.html">inla.mesh.project.inla.mesh.projector</a></td>
+<td>Methods for projecting to/from an inla.mesh</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.project.html">inla.mesh.projector</a></td>
+<td>Methods for projecting to/from an inla.mesh</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.project.html">inla.mesh.projector.inla.mesh</a></td>
+<td>Methods for projecting to/from an inla.mesh</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.project.html">inla.mesh.projector.inla.mesh.1d</a></td>
+<td>Methods for projecting to/from an inla.mesh</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.query.html">inla.mesh.query</a></td>
+<td>High-quality triangulations</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.segment.html">inla.mesh.segment</a></td>
+<td>Constraint segments for inla.mesh</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.segment.html">inla.mesh.segment.default</a></td>
+<td>Constraint segments for inla.mesh</td></tr>
+<tr><td style="width: 25%;"><a href="inla.mesh.segment.html">inla.mesh.segment.inla.mesh.segment</a></td>
+<td>Constraint segments for inla.mesh</td></tr>
+<tr><td style="width: 25%;"><a href="marginal.html">inla.mmarginal</a></td>
+<td>Functions which operates on marginals</td></tr>
+<tr><td style="width: 25%;"><a href="models.html">inla.models</a></td>
+<td>Valid models in INLA</td></tr>
+<tr><td style="width: 25%;"><a href="lattice2node.html">inla.node2lattice</a></td>
+<td>Functions to define mapping between a lattice and nodes</td></tr>
+<tr><td style="width: 25%;"><a href="lattice2node.html">inla.node2lattice.mapping</a></td>
+<td>Functions to define mapping between a lattice and nodes</td></tr>
+<tr><td style="width: 25%;"><a href="inla.nonconvex.hull.html">inla.nonconvex.hull</a></td>
+<td>Nonconvex set extensions.</td></tr>
+<tr><td style="width: 25%;"><a href="inla.nonconvex.hull.html">inla.nonconvex.hull.basic</a></td>
+<td>Nonconvex set extensions.</td></tr>
+<tr><td style="width: 25%;"><a href="options.html">inla.option</a></td>
+<td>Set and get global options for INLA</td></tr>
+<tr><td style="width: 25%;"><a href="options.html">inla.options</a></td>
+<td>Set and get global options for INLA</td></tr>
+<tr><td style="width: 25%;"><a href="pc-ar.html">inla.pc.ar</a></td>
+<td>Utility functions for the PC prior for a an AR(p) model</td></tr>
+<tr><td style="width: 25%;"><a href="pc-ar.html">inla.pc.ar.dpacf</a></td>
+<td>Utility functions for the PC prior for a an AR(p) model</td></tr>
+<tr><td style="width: 25%;"><a href="pc-ar.html">inla.pc.ar.rpacf</a></td>
+<td>Utility functions for the PC prior for a an AR(p) model</td></tr>
+<tr><td style="width: 25%;"><a href="pc-rho0.html">inla.pc.cor0</a></td>
+<td>Utility functions for the PC prior for correlation in AR(1)</td></tr>
+<tr><td style="width: 25%;"><a href="pc-rho1.html">inla.pc.cor1</a></td>
+<td>Utility functions for the PC prior for correlation in AR(1)</td></tr>
+<tr><td style="width: 25%;"><a href="pc-cormat.html">inla.pc.cormat</a></td>
+<td>Utility functions for the PC prior for a correlation matrix</td></tr>
+<tr><td style="width: 25%;"><a href="pc-cormat.html">inla.pc.cormat.dim2p</a></td>
+<td>Utility functions for the PC prior for a correlation matrix</td></tr>
+<tr><td style="width: 25%;"><a href="pc-cormat.html">inla.pc.cormat.dtheta</a></td>
+<td>Utility functions for the PC prior for a correlation matrix</td></tr>
+<tr><td style="width: 25%;"><a href="pc-cormat.html">inla.pc.cormat.p2dim</a></td>
+<td>Utility functions for the PC prior for a correlation matrix</td></tr>
+<tr><td style="width: 25%;"><a href="pc-cormat.html">inla.pc.cormat.permute</a></td>
+<td>Utility functions for the PC prior for a correlation matrix</td></tr>
+<tr><td style="width: 25%;"><a href="pc-cormat.html">inla.pc.cormat.R2r</a></td>
+<td>Utility functions for the PC prior for a correlation matrix</td></tr>
+<tr><td style="width: 25%;"><a href="pc-cormat.html">inla.pc.cormat.r2R</a></td>
+<td>Utility functions for the PC prior for a correlation matrix</td></tr>
+<tr><td style="width: 25%;"><a href="pc-cormat.html">inla.pc.cormat.R2theta</a></td>
+<td>Utility functions for the PC prior for a correlation matrix</td></tr>
+<tr><td style="width: 25%;"><a href="pc-cormat.html">inla.pc.cormat.r2theta</a></td>
+<td>Utility functions for the PC prior for a correlation matrix</td></tr>
+<tr><td style="width: 25%;"><a href="pc-cormat.html">inla.pc.cormat.rtheta</a></td>
+<td>Utility functions for the PC prior for a correlation matrix</td></tr>
+<tr><td style="width: 25%;"><a href="pc-cormat.html">inla.pc.cormat.theta2R</a></td>
+<td>Utility functions for the PC prior for a correlation matrix</td></tr>
+<tr><td style="width: 25%;"><a href="pc-cormat.html">inla.pc.cormat.theta2r</a></td>
+<td>Utility functions for the PC prior for a correlation matrix</td></tr>
+<tr><td style="width: 25%;"><a href="pc-rho0.html">inla.pc.dcor0</a></td>
+<td>Utility functions for the PC prior for correlation in AR(1)</td></tr>
+<tr><td style="width: 25%;"><a href="pc-rho1.html">inla.pc.dcor1</a></td>
+<td>Utility functions for the PC prior for correlation in AR(1)</td></tr>
+<tr><td style="width: 25%;"><a href="pc-t.html">inla.pc.ddof</a></td>
+<td>PC-prior for dof in a standarized Student-t</td></tr>
+<tr><td style="width: 25%;"><a href="pc-t.html">inla.pc.dof</a></td>
+<td>PC-prior for dof in a standarized Student-t</td></tr>
+<tr><td style="width: 25%;"><a href="pc-prec.html">inla.pc.dprec</a></td>
+<td>Utility functions for the PC prior for the precision</td></tr>
+<tr><td style="width: 25%;"><a href="pc-multvar.html">inla.pc.multvar</a></td>
+<td>Multivariate PC priors</td></tr>
+<tr><td style="width: 25%;"><a href="pc-multvar.html">inla.pc.multvar.h.default</a></td>
+<td>Multivariate PC priors</td></tr>
+<tr><td style="width: 25%;"><a href="pc-multvar.html">inla.pc.multvar.simplex</a></td>
+<td>Multivariate PC priors</td></tr>
+<tr><td style="width: 25%;"><a href="pc-multvar.html">inla.pc.multvar.simplex.d</a></td>
+<td>Multivariate PC priors</td></tr>
+<tr><td style="width: 25%;"><a href="pc-multvar.html">inla.pc.multvar.simplex.r</a></td>
+<td>Multivariate PC priors</td></tr>
+<tr><td style="width: 25%;"><a href="pc-multvar.html">inla.pc.multvar.sphere</a></td>
+<td>Multivariate PC priors</td></tr>
+<tr><td style="width: 25%;"><a href="pc-multvar.html">inla.pc.multvar.sphere.d</a></td>
+<td>Multivariate PC priors</td></tr>
+<tr><td style="width: 25%;"><a href="pc-multvar.html">inla.pc.multvar.sphere.r</a></td>
+<td>Multivariate PC priors</td></tr>
+<tr><td style="width: 25%;"><a href="pc-rho0.html">inla.pc.pcor0</a></td>
+<td>Utility functions for the PC prior for correlation in AR(1)</td></tr>
+<tr><td style="width: 25%;"><a href="pc-rho1.html">inla.pc.pcor1</a></td>
+<td>Utility functions for the PC prior for correlation in AR(1)</td></tr>
+<tr><td style="width: 25%;"><a href="pc-prec.html">inla.pc.pprec</a></td>
+<td>Utility functions for the PC prior for the precision</td></tr>
+<tr><td style="width: 25%;"><a href="pc-prec.html">inla.pc.prec</a></td>
+<td>Utility functions for the PC prior for the precision</td></tr>
+<tr><td style="width: 25%;"><a href="pc-rho0.html">inla.pc.qcor0</a></td>
+<td>Utility functions for the PC prior for correlation in AR(1)</td></tr>
+<tr><td style="width: 25%;"><a href="pc-rho1.html">inla.pc.qcor1</a></td>
+<td>Utility functions for the PC prior for correlation in AR(1)</td></tr>
+<tr><td style="width: 25%;"><a href="pc-prec.html">inla.pc.qprec</a></td>
+<td>Utility functions for the PC prior for the precision</td></tr>
+<tr><td style="width: 25%;"><a href="pc-rho0.html">inla.pc.rcor0</a></td>
+<td>Utility functions for the PC prior for correlation in AR(1)</td></tr>
+<tr><td style="width: 25%;"><a href="pc-rho1.html">inla.pc.rcor1</a></td>
+<td>Utility functions for the PC prior for correlation in AR(1)</td></tr>
+<tr><td style="width: 25%;"><a href="pc-prec.html">inla.pc.rprec</a></td>
+<td>Utility functions for the PC prior for the precision</td></tr>
+<tr><td style="width: 25%;"><a href="pc-t.html">inla.pc.t</a></td>
+<td>PC-prior for dof in a standarized Student-t</td></tr>
+<tr><td style="width: 25%;"><a href="plot.html">inla.plot</a></td>
+<td>Default INLA plotting</td></tr>
+<tr><td style="width: 25%;"><a href="marginal.html">inla.pmarginal</a></td>
+<td>Functions which operates on marginals</td></tr>
+<tr><td style="width: 25%;"><a href="posterior.sample.html">inla.posterior.sample</a></td>
+<td>Generate samples from an approximated posterior of a fitted model</td></tr>
+<tr><td style="width: 25%;"><a href="q.html">inla.q</a></td>
+<td>Control and view a remote inla-queue</td></tr>
+<tr><td style="width: 25%;"><a href="q.html">inla.qdel</a></td>
+<td>Control and view a remote inla-queue</td></tr>
+<tr><td style="width: 25%;"><a href="q.html">inla.qget</a></td>
+<td>Control and view a remote inla-queue</td></tr>
+<tr><td style="width: 25%;"><a href="qinv.html">inla.qinv</a></td>
+<td>Computes (parts of) the inverse of a SPD sparse matrix</td></tr>
+<tr><td style="width: 25%;"><a href="q.html">inla.qlog</a></td>
+<td>Control and view a remote inla-queue</td></tr>
+<tr><td style="width: 25%;"><a href="marginal.html">inla.qmarginal</a></td>
+<td>Functions which operates on marginals</td></tr>
+<tr><td style="width: 25%;"><a href="q.html">inla.qnuke</a></td>
+<td>Control and view a remote inla-queue</td></tr>
+<tr><td style="width: 25%;"><a href="qreordering.html">inla.qreordering</a></td>
+<td>Compute the reordering using the GMRFLib implementation</td></tr>
+<tr><td style="width: 25%;"><a href="qsample.html">inla.qsample</a></td>
+<td>Generate samples from a GMRF using the GMRFLib implementation</td></tr>
+<tr><td style="width: 25%;"><a href="qsolve.html">inla.qsolve</a></td>
+<td>Solves linear SPD systems</td></tr>
+<tr><td style="width: 25%;"><a href="q.html">inla.qstat</a></td>
+<td>Control and view a remote inla-queue</td></tr>
+<tr><td style="width: 25%;"><a href="coxph.html">inla.rbind.data.frames</a></td>
+<td>Convert a Cox proportional hazard model into Poisson regression</td></tr>
+<tr><td style="width: 25%;"><a href="read.graph.html">inla.read.graph</a></td>
+<td>Read and write a graph-object</td></tr>
+<tr><td style="width: 25%;"><a href="remote.html">inla.remote</a></td>
+<td>Setup remote computing</td></tr>
+<tr><td style="width: 25%;"><a href="reorderings.html">inla.reorderings</a></td>
+<td>Reorderings methods for sparse matrices</td></tr>
+<tr><td style="width: 25%;"><a href="rerun.html">inla.rerun</a></td>
+<td>Rerun an analysis</td></tr>
+<tr><td style="width: 25%;"><a href="rgeneric.html">inla.rgeneric.ar1.model</a></td>
+<td>rgeneric models</td></tr>
+<tr><td style="width: 25%;"><a href="rgeneric.html">inla.rgeneric.define</a></td>
+<td>rgeneric models</td></tr>
+<tr><td style="width: 25%;"><a href="rgeneric.html">inla.rgeneric.iid.model</a></td>
+<td>rgeneric models</td></tr>
+<tr><td style="width: 25%;"><a href="marginal.html">inla.rmarginal</a></td>
+<td>Functions which operates on marginals</td></tr>
+<tr><td style="width: 25%;"><a href="inla.row.kron.html">inla.row.kron</a></td>
+<td>Row-wise Kronecker products</td></tr>
+<tr><td style="width: 25%;"><a href="scale.model.html">inla.scale.model</a></td>
+<td>Scale an intrinsic GMRF model</td></tr>
+<tr><td style="width: 25%;"><a href="inla.sens.html">inla.sens</a></td>
+<td>Testing code for sensitivity</td></tr>
+<tr><td style="width: 25%;"><a href="control.compute.html">inla.set.control.compute.default</a></td>
+<td>Control variables in control.compute</td></tr>
+<tr><td style="width: 25%;"><a href="control.expert.html">inla.set.control.expert.default</a></td>
+<td>Control variables in control.expert</td></tr>
+<tr><td style="width: 25%;"><a href="control.family.html">inla.set.control.family.default</a></td>
+<td>Control variables in control.family</td></tr>
+<tr><td style="width: 25%;"><a href="control.fixed.html">inla.set.control.fixed.default</a></td>
+<td>Control variables in control.fixed</td></tr>
+<tr><td style="width: 25%;"><a href="control.group.html">inla.set.control.group.default</a></td>
+<td>Control variables in control.group</td></tr>
+<tr><td style="width: 25%;"><a href="control.hazard.html">inla.set.control.hazard.default</a></td>
+<td>Control variables in control.hazard</td></tr>
+<tr><td style="width: 25%;"><a href="control.inla.html">inla.set.control.inla.default</a></td>
+<td>Control variables in control.inla</td></tr>
+<tr><td style="width: 25%;"><a href="control.lincomb.html">inla.set.control.lincomb.default</a></td>
+<td>Control variables in control.lincomb</td></tr>
+<tr><td style="width: 25%;"><a href="control.link.html">inla.set.control.link.default</a></td>
+<td>Control variables in control.link</td></tr>
+<tr><td style="width: 25%;"><a href="control.mix.html">inla.set.control.mix.default</a></td>
+<td>Control variables in control.mix</td></tr>
+<tr><td style="width: 25%;"><a href="control.mode.html">inla.set.control.mode.default</a></td>
+<td>Control variables in control.mode</td></tr>
+<tr><td style="width: 25%;"><a href="control.predictor.html">inla.set.control.predictor.default</a></td>
+<td>Control variables in control.predictor</td></tr>
+<tr><td style="width: 25%;"><a href="control.results.html">inla.set.control.results.default</a></td>
+<td>Control variables in control.results</td></tr>
+<tr><td style="width: 25%;"><a href="control.update.html">inla.set.control.update.default</a></td>
+<td>Control variables in control.update</td></tr>
+<tr><td style="width: 25%;"><a href="options.html">inla.setOption</a></td>
+<td>Set and get global options for INLA</td></tr>
+<tr><td style="width: 25%;"><a href="inla.simplify.curve.html">inla.simplify.curve</a></td>
+<td>Recursive curve simplification.</td></tr>
+<tr><td style="width: 25%;"><a href="marginal.html">inla.smarginal</a></td>
+<td>Functions which operates on marginals</td></tr>
+<tr><td style="width: 25%;"><a href="as.inla.mesh.segment.html">inla.sp2segment</a></td>
+<td>Convert 'sp' curve objects to 'inla.mesh.segment' objects.</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde1.create.html">inla.spde.create</a></td>
+<td>Old SPDE model objects for INLA</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde.make.A.html">inla.spde.make.A</a></td>
+<td>Observation/prediction matrices for mesh models.</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde.make.block.A.html">inla.spde.make.block.A</a></td>
+<td>Observation matrices for mesh models.</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde.make.index.html">inla.spde.make.index</a></td>
+<td>SPDE model index vector generation</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde.models.html">inla.spde.models</a></td>
+<td>List SPDE models supported by inla.spde objects</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde.precision.html">inla.spde.precision</a></td>
+<td>Precision matrices for SPDE models</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde.precision.html">inla.spde.precision.inla.spde1</a></td>
+<td>Precision matrices for SPDE models</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde.precision.html">inla.spde.precision.inla.spde2</a></td>
+<td>Precision matrices for SPDE models</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde.result.html">inla.spde.result</a></td>
+<td>SPDE result extraction from INLA estimation results</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde.result.html">inla.spde.result.inla.spde1</a></td>
+<td>SPDE result extraction from INLA estimation results</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde.result.html">inla.spde.result.inla.spde2</a></td>
+<td>SPDE result extraction from INLA estimation results</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde.sample.html">inla.spde.sample</a></td>
+<td>Sample from SPDE models</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde.sample.html">inla.spde.sample.default</a></td>
+<td>Sample from SPDE models</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde.sample.html">inla.spde.sample.inla.spde</a></td>
+<td>Sample from SPDE models</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde1.create.html">inla.spde1</a></td>
+<td>Old SPDE model objects for INLA</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde1.create.html">inla.spde1.create</a></td>
+<td>Old SPDE model objects for INLA</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde1.create.html">inla.spde1.imatern</a></td>
+<td>Old SPDE model objects for INLA</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde1.create.html">inla.spde1.matern</a></td>
+<td>Old SPDE model objects for INLA</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde1.create.html">inla.spde1.matern.osc</a></td>
+<td>Old SPDE model objects for INLA</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde.models.html">inla.spde1.models</a></td>
+<td>List SPDE models supported by inla.spde objects</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde.precision.html">inla.spde1.precision</a></td>
+<td>Precision matrices for SPDE models</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde.result.html">inla.spde1.result</a></td>
+<td>SPDE result extraction from INLA estimation results</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde2.generic.html">inla.spde2</a></td>
+<td>Generic spde2 model creation.</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde2.generic.html">inla.spde2.generic</a></td>
+<td>Generic spde2 model creation.</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde2.matern.html">inla.spde2.matern</a></td>
+<td>Matern SPDE model object for INLA</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde2.matern.sd.basis.html">inla.spde2.matern.sd.basis</a></td>
+<td>Approximate variance-compensating basis functions</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde.models.html">inla.spde2.models</a></td>
+<td>List SPDE models supported by inla.spde objects</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde.precision.html">inla.spde2.precision</a></td>
+<td>Precision matrices for SPDE models</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde.result.html">inla.spde2.result</a></td>
+<td>SPDE result extraction from INLA estimation results</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde2.generic.html">inla.spde2.theta2phi0</a></td>
+<td>Generic spde2 model creation.</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde2.generic.html">inla.spde2.theta2phi1</a></td>
+<td>Generic spde2 model creation.</td></tr>
+<tr><td style="width: 25%;"><a href="inla.spde2.generic.html">inla.spde2.theta2phi2</a></td>
+<td>Generic spde2 model creation.</td></tr>
+<tr><td style="width: 25%;"><a href="graph.matrix.html">inla.spy</a></td>
+<td>Construct a neighbour-matrix from a 'graph'</td></tr>
+<tr><td style="width: 25%;"><a href="remote.html">inla.ssh.copy.id</a></td>
+<td>Setup remote computing</td></tr>
+<tr><td style="width: 25%;"><a href="inla.stack.html">inla.stack</a></td>
+<td>Data stacking for advanced INLA models</td></tr>
+<tr><td style="width: 25%;"><a href="inla.stack.html">inla.stack.A</a></td>
+<td>Data stacking for advanced INLA models</td></tr>
+<tr><td style="width: 25%;"><a href="inla.stack.html">inla.stack.compress</a></td>
+<td>Data stacking for advanced INLA models</td></tr>
+<tr><td style="width: 25%;"><a href="inla.stack.html">inla.stack.data</a></td>
+<td>Data stacking for advanced INLA models</td></tr>
+<tr><td style="width: 25%;"><a href="inla.stack.html">inla.stack.index</a></td>
+<td>Data stacking for advanced INLA models</td></tr>
+<tr><td style="width: 25%;"><a href="inla.stack.html">inla.stack.join</a></td>
+<td>Data stacking for advanced INLA models</td></tr>
+<tr><td style="width: 25%;"><a href="inla.stack.html">inla.stack.LHS</a></td>
+<td>Data stacking for advanced INLA models</td></tr>
+<tr><td style="width: 25%;"><a href="inla.stack.html">inla.stack.remove.unused</a></td>
+<td>Data stacking for advanced INLA models</td></tr>
+<tr><td style="width: 25%;"><a href="inla.stack.html">inla.stack.RHS</a></td>
+<td>Data stacking for advanced INLA models</td></tr>
+<tr><td style="width: 25%;"><a href="inla.stack.html">inla.stack.sum</a></td>
+<td>Data stacking for advanced INLA models</td></tr>
+<tr><td style="width: 25%;"><a href="surv.html">inla.surv</a></td>
+<td>Create a Survival Object for INLA</td></tr>
+<tr><td style="width: 25%;"><a href="marginal.html">inla.tmarginal</a></td>
+<td>Functions which operates on marginals</td></tr>
+<tr><td style="width: 25%;"><a href="upgrade.html">inla.update</a></td>
+<td>Upgrade the INLA-package</td></tr>
+<tr><td style="width: 25%;"><a href="upgrade.html">inla.upgrade</a></td>
+<td>Upgrade the INLA-package</td></tr>
+<tr><td style="width: 25%;"><a href="lattice2node.html">inla.vector2matrix</a></td>
+<td>Functions to define mapping between a lattice and nodes</td></tr>
+<tr><td style="width: 25%;"><a href="version.html">inla.version</a></td>
+<td>Show the version of the INLA-package</td></tr>
+<tr><td style="width: 25%;"><a href="read.graph.html">inla.write.graph</a></td>
+<td>Read and write a graph-object</td></tr>
+<tr><td style="width: 25%;"><a href="marginal.html">inla.zmarginal</a></td>
+<td>Functions which operates on marginals</td></tr>
+<tr><td style="width: 25%;"><a href="surv.html">is.inla.surv</a></td>
+<td>Create a Survival Object for INLA</td></tr>
+</table>
+
+<h2><a name="K">-- K --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="Kidney.html">Kidney</a></td>
+<td>Kidney infection data</td></tr>
+<tr><td style="width: 25%;"><a href="residuals.html">ks.plot</a></td>
+<td>Kolmogorov-Smirnov Test Plots</td></tr>
+</table>
+
+<h2><a name="L">-- L --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="lattice2node.html">lattice2node</a></td>
+<td>Functions to define mapping between a lattice and nodes</td></tr>
+<tr><td style="width: 25%;"><a href="lattice2node.html">lattice2node.mapping</a></td>
+<td>Functions to define mapping between a lattice and nodes</td></tr>
+<tr><td style="width: 25%;"><a href="Leuk.html">Leuk</a></td>
+<td>The Leukemia data</td></tr>
+<tr><td style="width: 25%;"><a href="Leuk.html">Leukemia</a></td>
+<td>The Leukemia data</td></tr>
+<tr><td style="width: 25%;"><a href="lines.inla.mesh.segment.html">lines.inla.mesh.segment</a></td>
+<td>Draw 'inla.mesh.segment' objects.</td></tr>
+<tr><td style="width: 25%;"><a href="link-functions.html">link</a></td>
+<td>Link functions in INLA</td></tr>
+</table>
+
+<h2><a name="M">-- M --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="lincomb.html">make.lincomb</a></td>
+<td>Create linear combinations</td></tr>
+<tr><td style="width: 25%;"><a href="lincomb.html">make.lincombs</a></td>
+<td>Create linear combinations</td></tr>
+<tr><td style="width: 25%;"><a href="marginal.html">marginal</a></td>
+<td>Functions which operates on marginals</td></tr>
+<tr><td style="width: 25%;"><a href="marginal.html">marginal.expectation</a></td>
+<td>Functions which operates on marginals</td></tr>
+<tr><td style="width: 25%;"><a href="marginal.html">marginal.transform</a></td>
+<td>Functions which operates on marginals</td></tr>
+<tr><td style="width: 25%;"><a href="lattice2node.html">matrix2vector</a></td>
+<td>Functions to define mapping between a lattice and nodes</td></tr>
+<tr><td style="width: 25%;"><a href="marginal.html">mmarginal</a></td>
+<td>Functions which operates on marginals</td></tr>
+<tr><td style="width: 25%;"><a href="Munich.html">Munich</a></td>
+<td>The Munich rent data</td></tr>
+</table>
+
+<h2><a name="N">-- N --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="nwEngland.html">NewEngland</a></td>
+<td>The New England map</td></tr>
+<tr><td style="width: 25%;"><a href="lattice2node.html">node2lattice</a></td>
+<td>Functions to define mapping between a lattice and nodes</td></tr>
+<tr><td style="width: 25%;"><a href="lattice2node.html">node2lattice.mapping</a></td>
+<td>Functions to define mapping between a lattice and nodes</td></tr>
+<tr><td style="width: 25%;"><a href="nwEngland.html">nwEngland</a></td>
+<td>The New England map</td></tr>
+</table>
+
+<h2><a name="O">-- O --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="Oral.html">Oral</a></td>
+<td>~~ data name/kind ... ~~</td></tr>
+</table>
+
+<h2><a name="P">-- P --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="ar.html">pacf2acf</a></td>
+<td>Convert between parameterizations for the AR(p) model</td></tr>
+<tr><td style="width: 25%;"><a href="ar.html">pacf2phi</a></td>
+<td>Convert between parameterizations for the AR(p) model</td></tr>
+<tr><td style="width: 25%;"><a href="param2.matern.orig.html">param2.matern.orig</a></td>
+<td>Parameter settings for 'inla.spde2.matern' models.</td></tr>
+<tr><td style="width: 25%;"><a href="pc-rho0.html">pc.cor0</a></td>
+<td>Utility functions for the PC prior for correlation in AR(1)</td></tr>
+<tr><td style="width: 25%;"><a href="pc-rho1.html">pc.cor1</a></td>
+<td>Utility functions for the PC prior for correlation in AR(1)</td></tr>
+<tr><td style="width: 25%;"><a href="pc-rho0.html">pc.dcor0</a></td>
+<td>Utility functions for the PC prior for correlation in AR(1)</td></tr>
+<tr><td style="width: 25%;"><a href="pc-rho1.html">pc.dcor1</a></td>
+<td>Utility functions for the PC prior for correlation in AR(1)</td></tr>
+<tr><td style="width: 25%;"><a href="pc-t.html">pc.ddof</a></td>
+<td>PC-prior for dof in a standarized Student-t</td></tr>
+<tr><td style="width: 25%;"><a href="pc-t.html">pc.dof</a></td>
+<td>PC-prior for dof in a standarized Student-t</td></tr>
+<tr><td style="width: 25%;"><a href="pc-prec.html">pc.dprec</a></td>
+<td>Utility functions for the PC prior for the precision</td></tr>
+<tr><td style="width: 25%;"><a href="pc-multvar.html">pc.multvar</a></td>
+<td>Multivariate PC priors</td></tr>
+<tr><td style="width: 25%;"><a href="pc-multvar.html">pc.multvar.h.default</a></td>
+<td>Multivariate PC priors</td></tr>
+<tr><td style="width: 25%;"><a href="pc-multvar.html">pc.multvar.simplex</a></td>
+<td>Multivariate PC priors</td></tr>
+<tr><td style="width: 25%;"><a href="pc-multvar.html">pc.multvar.simplex.d</a></td>
+<td>Multivariate PC priors</td></tr>
+<tr><td style="width: 25%;"><a href="pc-multvar.html">pc.multvar.simplex.r</a></td>
+<td>Multivariate PC priors</td></tr>
+<tr><td style="width: 25%;"><a href="pc-multvar.html">pc.multvar.sphere</a></td>
+<td>Multivariate PC priors</td></tr>
+<tr><td style="width: 25%;"><a href="pc-multvar.html">pc.multvar.sphere.d</a></td>
+<td>Multivariate PC priors</td></tr>
+<tr><td style="width: 25%;"><a href="pc-multvar.html">pc.multvar.sphere.r</a></td>
+<td>Multivariate PC priors</td></tr>
+<tr><td style="width: 25%;"><a href="pc-rho0.html">pc.pcor0</a></td>
+<td>Utility functions for the PC prior for correlation in AR(1)</td></tr>
+<tr><td style="width: 25%;"><a href="pc-rho1.html">pc.pcor1</a></td>
+<td>Utility functions for the PC prior for correlation in AR(1)</td></tr>
+<tr><td style="width: 25%;"><a href="pc-prec.html">pc.pprec</a></td>
+<td>Utility functions for the PC prior for the precision</td></tr>
+<tr><td style="width: 25%;"><a href="pc-prec.html">pc.prec</a></td>
+<td>Utility functions for the PC prior for the precision</td></tr>
+<tr><td style="width: 25%;"><a href="pc-rho0.html">pc.qcor0</a></td>
+<td>Utility functions for the PC prior for correlation in AR(1)</td></tr>
+<tr><td style="width: 25%;"><a href="pc-rho1.html">pc.qcor1</a></td>
+<td>Utility functions for the PC prior for correlation in AR(1)</td></tr>
+<tr><td style="width: 25%;"><a href="pc-prec.html">pc.qprec</a></td>
+<td>Utility functions for the PC prior for the precision</td></tr>
+<tr><td style="width: 25%;"><a href="pc-rho0.html">pc.rcor0</a></td>
+<td>Utility functions for the PC prior for correlation in AR(1)</td></tr>
+<tr><td style="width: 25%;"><a href="pc-rho1.html">pc.rcor1</a></td>
+<td>Utility functions for the PC prior for correlation in AR(1)</td></tr>
+<tr><td style="width: 25%;"><a href="pc-prec.html">pc.rprec</a></td>
+<td>Utility functions for the PC prior for the precision</td></tr>
+<tr><td style="width: 25%;"><a href="pc-t.html">pc.t</a></td>
+<td>PC-prior for dof in a standarized Student-t</td></tr>
+<tr><td style="width: 25%;"><a href="ar.html">phi2acf</a></td>
+<td>Convert between parameterizations for the AR(p) model</td></tr>
+<tr><td style="width: 25%;"><a href="ar.html">phi2pacf</a></td>
+<td>Convert between parameterizations for the AR(p) model</td></tr>
+<tr><td style="width: 25%;"><a href="plot.html">plot.inla</a></td>
+<td>Default INLA plotting</td></tr>
+<tr><td style="width: 25%;"><a href="read.graph.html">plot.inla.graph</a></td>
+<td>Read and write a graph-object</td></tr>
+<tr><td style="width: 25%;"><a href="plot.inla.mesh.html">plot.inla.mesh</a></td>
+<td>Draw a triangulation mesh object</td></tr>
+<tr><td style="width: 25%;"><a href="surv.html">plot.inla.surv</a></td>
+<td>Create a Survival Object for INLA</td></tr>
+<tr><td style="width: 25%;"><a href="plot.inla.trimesh.html">plot.inla.trimesh</a></td>
+<td>Low level triangulation mesh plotting</td></tr>
+<tr><td style="width: 25%;"><a href="marginal.html">pmarginal</a></td>
+<td>Functions which operates on marginals</td></tr>
+<tr><td style="width: 25%;"><a href="posterior.sample.html">posterior.sample</a></td>
+<td>Generate samples from an approximated posterior of a fitted model</td></tr>
+<tr><td style="width: 25%;"><a href="PRborder.html">PRborder</a></td>
+<td>The PRborder data</td></tr>
+<tr><td style="width: 25%;"><a href="print.html">print.inla</a></td>
+<td>Print a INLA fit</td></tr>
+<tr><td style="width: 25%;"><a href="read.graph.html">print.inla.graph.summary</a></td>
+<td>Read and write a graph-object</td></tr>
+<tr><td style="width: 25%;"><a href="q.html">print.inla.q</a></td>
+<td>Control and view a remote inla-queue</td></tr>
+<tr><td style="width: 25%;"><a href="surv.html">print.inla.surv</a></td>
+<td>Create a Survival Object for INLA</td></tr>
+<tr><td style="width: 25%;"><a href="summary.html">print.summary.inla</a></td>
+<td>Summary for a INLA fit</td></tr>
+<tr><td style="width: 25%;"><a href="summary.inla.mesh.html">print.summary.inla.mesh</a></td>
+<td>Summarizing triangular mesh objects</td></tr>
+<tr><td style="width: 25%;"><a href="PRprec.html">PRprec</a></td>
+<td>The PRprec data</td></tr>
+</table>
+
+<h2><a name="Q">-- Q --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="qinv.html">qinv</a></td>
+<td>Computes (parts of) the inverse of a SPD sparse matrix</td></tr>
+<tr><td style="width: 25%;"><a href="marginal.html">qmarginal</a></td>
+<td>Functions which operates on marginals</td></tr>
+<tr><td style="width: 25%;"><a href="qreordering.html">qreordering</a></td>
+<td>Compute the reordering using the GMRFLib implementation</td></tr>
+<tr><td style="width: 25%;"><a href="qsample.html">qsample</a></td>
+<td>Generate samples from a GMRF using the GMRFLib implementation</td></tr>
+<tr><td style="width: 25%;"><a href="qsolve.html">qsolve</a></td>
+<td>Solves linear SPD systems</td></tr>
+</table>
+
+<h2><a name="R">-- R --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="read.graph.html">read.graph</a></td>
+<td>Read and write a graph-object</td></tr>
+<tr><td style="width: 25%;"><a href="reorderings.html">reorderings</a></td>
+<td>Reorderings methods for sparse matrices</td></tr>
+<tr><td style="width: 25%;"><a href="rerun.html">rerun</a></td>
+<td>Rerun an analysis</td></tr>
+<tr><td style="width: 25%;"><a href="rgeneric.html">rgeneric</a></td>
+<td>rgeneric models</td></tr>
+<tr><td style="width: 25%;"><a href="rgeneric.html">rgeneric.ar1.model</a></td>
+<td>rgeneric models</td></tr>
+<tr><td style="width: 25%;"><a href="rgeneric.html">rgeneric.define</a></td>
+<td>rgeneric models</td></tr>
+<tr><td style="width: 25%;"><a href="rgeneric.html">rgeneric.iid.model</a></td>
+<td>rgeneric models</td></tr>
+<tr><td style="width: 25%;"><a href="marginal.html">rmarginal</a></td>
+<td>Functions which operates on marginals</td></tr>
+</table>
+
+<h2><a name="S">-- S --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="Salm.html">Salm</a></td>
+<td>Extra-Poisson variation in dose-response study</td></tr>
+<tr><td style="width: 25%;"><a href="scale.model.html">scale.model</a></td>
+<td>Scale an intrinsic GMRF model</td></tr>
+<tr><td style="width: 25%;"><a href="Scotland.html">Scotland</a></td>
+<td>Conditional Autoregressive (CAR) model for disease mapping</td></tr>
+<tr><td style="width: 25%;"><a href="Seeds.html">Seeds</a></td>
+<td>Factorial design</td></tr>
+<tr><td style="width: 25%;"><a href="control.compute.html">set.control.compute.default</a></td>
+<td>Control variables in control.compute</td></tr>
+<tr><td style="width: 25%;"><a href="control.expert.html">set.control.expert.default</a></td>
+<td>Control variables in control.expert</td></tr>
+<tr><td style="width: 25%;"><a href="control.family.html">set.control.family.default</a></td>
+<td>Control variables in control.family</td></tr>
+<tr><td style="width: 25%;"><a href="control.fixed.html">set.control.fixed.default</a></td>
+<td>Control variables in control.fixed</td></tr>
+<tr><td style="width: 25%;"><a href="control.group.html">set.control.group.default</a></td>
+<td>Control variables in control.group</td></tr>
+<tr><td style="width: 25%;"><a href="control.hazard.html">set.control.hazard.default</a></td>
+<td>Control variables in control.hazard</td></tr>
+<tr><td style="width: 25%;"><a href="control.inla.html">set.control.inla.default</a></td>
+<td>Control variables in control.inla</td></tr>
+<tr><td style="width: 25%;"><a href="control.lincomb.html">set.control.lincomb.default</a></td>
+<td>Control variables in control.lincomb</td></tr>
+<tr><td style="width: 25%;"><a href="control.link.html">set.control.link.default</a></td>
+<td>Control variables in control.link</td></tr>
+<tr><td style="width: 25%;"><a href="control.mix.html">set.control.mix.default</a></td>
+<td>Control variables in control.mix</td></tr>
+<tr><td style="width: 25%;"><a href="control.mode.html">set.control.mode.default</a></td>
+<td>Control variables in control.mode</td></tr>
+<tr><td style="width: 25%;"><a href="control.predictor.html">set.control.predictor.default</a></td>
+<td>Control variables in control.predictor</td></tr>
+<tr><td style="width: 25%;"><a href="control.results.html">set.control.results.default</a></td>
+<td>Control variables in control.results</td></tr>
+<tr><td style="width: 25%;"><a href="control.update.html">set.control.update.default</a></td>
+<td>Control variables in control.update</td></tr>
+<tr><td style="width: 25%;"><a href="marginal.html">smarginal</a></td>
+<td>Functions which operates on marginals</td></tr>
+<tr><td style="width: 25%;"><a href="SPDEtoy.html">SPDEtoy</a></td>
+<td>toy simulated data set for the SPDE tutorial</td></tr>
+<tr><td style="width: 25%;"><a href="graph.matrix.html">spy</a></td>
+<td>Construct a neighbour-matrix from a 'graph'</td></tr>
+<tr><td style="width: 25%;"><a href="remote.html">ssh.copy.id</a></td>
+<td>Setup remote computing</td></tr>
+<tr><td style="width: 25%;"><a href="summary.html">summary.inla</a></td>
+<td>Summary for a INLA fit</td></tr>
+<tr><td style="width: 25%;"><a href="read.graph.html">summary.inla.graph</a></td>
+<td>Read and write a graph-object</td></tr>
+<tr><td style="width: 25%;"><a href="summary.inla.mesh.html">summary.inla.mesh</a></td>
+<td>Summarizing triangular mesh objects</td></tr>
+<tr><td style="width: 25%;"><a href="q.html">summary.inla.q</a></td>
+<td>Control and view a remote inla-queue</td></tr>
+<tr><td style="width: 25%;"><a href="summary.html">summary.surv.inla</a></td>
+<td>Summary for a INLA fit</td></tr>
+<tr><td style="width: 25%;"><a href="Surg.html">Surg</a></td>
+<td>Surgical: Institutional ranking</td></tr>
+<tr><td style="width: 25%;"><a href="SurvSim.html">SurvSim</a></td>
+<td>Survival data</td></tr>
+</table>
+
+<h2><a name="T">-- T --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="Tokyo.html">Tokyo</a></td>
+<td>Binomial time series</td></tr>
+</table>
+
+<h2><a name="V">-- V --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="lattice2node.html">vector2matrix</a></td>
+<td>Functions to define mapping between a lattice and nodes</td></tr>
+<tr><td style="width: 25%;"><a href="version.html">version</a></td>
+<td>Show the version of the INLA-package</td></tr>
+</table>
+
+<h2><a name="W">-- W --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="read.graph.html">write.graph</a></td>
+<td>Read and write a graph-object</td></tr>
+</table>
+
+<h2><a name="Z">-- Z --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="Zambia.html">Zambia</a></td>
+<td>Semiparametric regression</td></tr>
+<tr><td style="width: 25%;"><a href="marginal.html">zmarginal</a></td>
+<td>Functions which operates on marginals</td></tr>
+</table>
+</body></html>
