@@ -1,28 +1,68 @@
-# DPM-LGCP
-Identifying Transcriptional Regulatory Modules among Different Chromatin States 
-# Overview
-DPM-LGCP stands for Dirichlet Prior mixture for Log Gaussian Cox Process. It is a non-parametric Bayesian clustering technique based on non-homogeneous Poisson process which has been used to identify transcriptional regulatory modules in distinct chromatin states. The algorithm clusters transcription factors sharing similar intensity function (binding patterns). It has broader applications to cases requiring un-supervised clustering of large datasets with prior information on clusters.
-# System Requirements
-DP-LGCP is independent of operating systems as it is written in R. Basic requirements for running the pipeline include installing R and the following libraries- 'INLA'(INLA 0.0-1468872408, dated 2016-07-18 (14:43:05+0100)), 'miceadds', 'foreach', 'doParallel', 'igraph', 'caTools'.
-# Usage
-Unzip the package. Change the current directory in R to the 'GitHub_code' folder containing the code and data organized into subfolders - 'data' contains diHMM generated domain level bed files and mm10 three column peak files of transcription factors to be used in clustering step;  'main' contains all R scripts ; 'results' contains RData files.
+# Chromatin state specific transcriptional regulatory network identification
 
-The following steps need to be followed to obtain TF regulatory modules in different chromatin states - 
+Version	1.0
+Date		08/01/2017
+Description	DPM-LGCP stands for Dirichlet Prior mixture for Log Gaussian Cox Process. It is a non-parametric Bayesian clustering technique based on non-homogeneous Poisson process which has been used to identify transcriptional regulatory modules in distinct chromatin states. The algorithm clusters transcription factors sharing similar intensity function (binding patterns). It has broader applications to cases requiring un-supervised clustering of large datasets with prior information on clusters.	
+Author 	Sharmi Banerjee, Honxiao Zhu, Man Tang, Xiaowei Wu, Wu Feng, David Xie	
 
-1. In R console, run the command below where 'workpath' is the full file path to the 'GitHub_code' directory, e.g.
+## System Requirements
+DP-LGCP is independent of operating systems as it is written in R. Basic requirements for running the pipeline include installing R and the following libraries- 'INLA'(INLA 0.0-1468872408, dated 2016-07-18 (14:43:05+0100)), ‘miceadds’, ‘foreach’, ‘doParallel’, ‘igraph’, ‘caTools’, ‘ComplexHeatmap’, ‘pvclust’, ‘MASS’, ‘circlize’, ‘RColorBrewer’, ‘pheatmap’.
+
+## Usage
+Unzip the package. Change the current directory in R to the ‘LGCP_package' folder containing the code and data organized into subfolders –
+•	‘INLA’ contains the R package
+•	‘Real’ contains script, data and some results for neural stem cells used in the paper 
+o	‘Data’ – peak files for twenty-one transcription factors, diHMM generated domain bed files for thirty domains and mm10 refseq genes. 
+o	‘main_code’ – scripts to generate clusters in chromatin states
+o	‘plotting_code’ -  scripts to generate enrichment maps of TF peaks and TF modules in chromatin states
+o	‘results’ – clustering results (RData files) on chromatin states
+•	‘Simulation’ has code and results for simulation data
+o	‘code’ – scripts to simulate transcription factors binding sites with twenty TFs and three clusters and evaluate results by applying clustering algorithm using non-homogeneous Poisson point process
+o	‘data’ – simulated data generated from scripts in ’code’ folder
+o	‘results’ – clustering results
+•	‘Neal_Alg3_funs’ has the main algorithm clustering functions.
 
 
-```
-> workpath = "/Users/sharmibanerjee/Documents/Summer2017/GitHub_code/"
-> source(paste0(workpath,"/main/script_generate_TF_peaks_in_diHMM_states.R"))
-> get_TF_peaks_in_states_conditional_threshold(workpath)
-```
-This step reads diHMM and peak files and selects those TFs in each chromatin state window that contain peaks greater than the threshold. After step 1 completes, RData files should be generated in the "results" folder.
 
-2. Run the following commands on R console to generate clustering results
-```
-> source(paste0(workpath,"/main/script_get_clusters_for_each_diHMM_state.R"))
-> get_clusters_for_each_chromatin_state(workpath)
-```
+### Setting INLA path 
+Extract INLA compressed file and copy INLA folder under LGCP-package to R library located in - /Library/Frameworks/R.framework/Versions/3.3/Resources/library
 
-The RData files from clustering step should be generated in the 'results' folder with the names 'diHMM_celltype_res_TFcluster_threshold_chromatin_state_name'
+### Clustering on simulation data
+1.	Set working directory in R to the path up to the Simulation directory in LGCP package. E.g. -
+setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/')
+2.	Set work path in R console. E.g. -
+workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/ Simulation/ code/”
+3.	Run simulation script -
+source("script_simulate_data.R")
+4.	Evaluate clustering result -
+source("script_run_Neal_alg3.R")
+
+### Simulation case study – 
+•	Three 1D non-homogeneous Poisson processes with Log-Gaussian intensity were generated. Next, binding site locations of twenty transcription factors were simulated by drawing independent samples from these non-homogeneous Poisson processes. In Figure 1A, the solid curves denote the true intensities. 
+•	Using the simulated binding site locations, we applied the clustering algorithm. The TFs were randomly assigned to any cluster at initializations. The results are shown after ten iterations –
+o	initial error rate: 0.394736842105263
+o	estimation error rate: 0
+o	overall true marginal likelihood: 76.7314595602879
+o	overall estimated marginal likelihood: 76.7314595602879
+o	true marginal likelihood per cluster: 27.2765131123867, 14.9562841559956, 34.4986622919056 
+o	estimated marginal likelihood per cluster: 27.2765131123867, 14.9562841559956, 34.4986622919056 
+
+### Clustering on real data
+1.	Set working directory in R to the path up to the Real directory in LGCP package. E.g. -
+setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Real/ main_code/')
+2.	Set work path in R console. E.g. -
+workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/”
+3.	Run the following scripts –
+source("script_generate_TF_peaks_in_diHMM_states.R")
+source("script_get_clusters_for_each_diHMM_state.R")
+4.	Files generated 
+a.	Clustering results will be stored in the ‘results’ folder under ‘Real’ with the file names diHMM_celltype_cluster_domainname.RData
+b.	TF peaks in each chromatin state will be generated with names celltype_TFpeaks_diHMM_chromatinstate.RData
+
+### Plotting enrichment heat-maps
+1.	Set working directory in R to the path up to the Real directory in LGCP package. E.g. -
+setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Real/ plotting_code/')
+2.	Set work path in R console. E.g. -
+workpath = “/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/”
+3.	Run the following scripts to generate heat map in Figure 2(a) in main paper
+source("TF_peak_enrichment_in _states.R")
