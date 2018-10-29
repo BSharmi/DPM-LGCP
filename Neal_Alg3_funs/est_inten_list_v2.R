@@ -1,4 +1,4 @@
-#-------------function 2: calculate log intensity for a list of point process ---------------
+#--------------function 2: calculate log intensity for a list of point process ---------------
 est_inten_list_v2 = function(samples, Ns, T, mesh1, spde1, mlik1=FALSE, 
                          config1=FALSE, zgrid.eval=FALSE, tgrid, save_result=FALSE, take_sample=FALSE, verbose=FALSE){
 # in _v2, some errors were corrected in E_point_process, and lam's estimation.
