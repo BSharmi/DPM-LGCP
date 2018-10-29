@@ -2,7 +2,7 @@
 
 ###################################################
 ### code chunk number 1: scale-model.Rnw:68-82
-###################################################
+####################################################
 
 if (Sys.getenv("USER") == "sigrunnsrbye") {
 setwd("/Users/sigrunnsrbye/Dropbox/Tutorial_igmrfs")
