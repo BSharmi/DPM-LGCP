@@ -5,7 +5,7 @@ gen_intensity = function(tgrid, l, scaling)
   #       l: scalar, characteristic length scale
   #       scaling: scalar, scaling parameter for intensity function
   # output:
-  #       a vector of length(tgrid), an intensity function scaled by scaling parameter
+  ##       a vector of length(tgrid), an intensity function scaled by scaling parameter
 {
   library(MASS)
   p = length(tgrid)
