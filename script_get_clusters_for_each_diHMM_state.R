@@ -12,7 +12,7 @@ no_cores <- detectCores() - 1
 cl <- makeCluster(no_cores)
 registerDoParallel(cl)
 
-#workpath = "/home/bsharmi6/R_scripts/SharmiWork/"
+##workpath = "/home/bsharmi6/R_scripts/SharmiWork/"
 
 ## call function to compute clustering across a state within different randomly selected windows
 compute_cluster <- function(Dstate,fpath){
