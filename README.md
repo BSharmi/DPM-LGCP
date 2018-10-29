@@ -40,12 +40,12 @@ source("script_run_Neal_alg3.R")
 ### Simulation case study – 
 •	Three 1D non-homogeneous Poisson processes with Log-Gaussian intensity were generated. Next, binding site locations of twenty transcription factors were simulated by drawing independent samples from these non-homogeneous Poisson processes. In Figure 1A, the solid curves denote the true intensities. 
 •	Using the simulated binding site locations, we applied the clustering algorithm. The TFs were randomly assigned to any cluster at initializations. The results are shown after ten iterations –
-o	initial error rate: 0.394736842105263
+o	initial error rate: 0.39
 o	estimation error rate: 0
-o	overall true marginal likelihood: 76.7314595602879
-o	overall estimated marginal likelihood: 76.7314595602879
-o	true marginal likelihood per cluster: 27.2765131123867, 14.9562841559956, 34.4986622919056 
-o	estimated marginal likelihood per cluster: 27.2765131123867, 14.9562841559956, 34.4986622919056 
+o	overall true marginal likelihood: 76.73
+o	overall estimated marginal likelihood: 76.73
+o	true marginal likelihood per cluster: 27.27, 14.95, 34.49
+o	estimated marginal likelihood per cluster: 27.27, 14.95, 34.49
 
 ### Clustering on real data
 1.	Set working directory in R to the path up to the Real directory in LGCP package. E.g. -
