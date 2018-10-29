@@ -13,7 +13,7 @@ get_TF_peaks_in_states <- function(state_list_ij,combined.TF.regionmeans,combine
 }
 
 
-######################## main code #############################
+######################## main code ###############################
 library(miceadds)
 library(igraph)
 library(caTools)
