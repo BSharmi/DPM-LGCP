@@ -28,6 +28,6 @@ for (i in 1 : nsample){
   sample.len[i] = length(samples[[i]])
 }
 
-## save simulation data
+### save simulation data
 save(tgrid, f.vec, samples, clust, sample.mat, sample.len, file = paste(workpath, "Simulation/data/lgcp_simu_data_v0.RData", sep = "/"))
 
