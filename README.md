@@ -68,3 +68,7 @@ setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Real/ plotting_co
 workpath = “/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/”
 3.	Run the following scripts to generate heat map in Figure 2(a) in main paper
 source("TF_peak_enrichment_in _states.R")
+
+
+## Contact
+bsharmi6@vt.edu
