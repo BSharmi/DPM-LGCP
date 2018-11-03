@@ -1,7 +1,9 @@
 # Chromatin state specific transcriptional regulatory network identification
 
 Version	1.0
+
 Date		11/02/2018
+
 Description	DPM-LGCP stands for Dirichlet Prior mixture for Log Gaussian Cox Process. It is a non-parametric Bayesian clustering technique based on non-homogeneous Poisson process which has been used to identify transcriptional regulatory modules in distinct chromatin states. The algorithm clusters transcription factors sharing similar intensity function (binding patterns). It has broader applications to cases requiring un-supervised clustering of large datasets with prior information on clusters.	
 Author 	Sharmi Banerjee, Honxiao Zhu, Man Tang, Xiaowei Wu, Wu Feng, David Xie	
 
