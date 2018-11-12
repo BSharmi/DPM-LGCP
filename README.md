@@ -47,7 +47,7 @@ Download and copy INLA folder under LGCP-package to the R library of the system.
 setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/')
 2.	Set a variable 'workpath' in R console. E.g. on R console -
 workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/code/”
-3. Source the functions needed
+3. Source the functions needed. e.g.
 source.all('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Neal_Alg3_funs/')
 4.	Run simulation script -
 source("script_simulate_data.R")
@@ -70,7 +70,7 @@ source("script_run_Neal_alg3.R")
 setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Real/Main_Code/')
 2.	Set a variable 'workpath' in R console. E.g. on R console-\
 workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/”
-3. Source the functions needed\
+3. Source the functions needed e.g.\
 source.all('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Neal_Alg3_funs/')
 4.	Run the following scripts –
 
