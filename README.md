@@ -30,15 +30,15 @@ DP-LGCP is independent of operating systems as it is written in R. Basic require
   
   -Results:  clustering results (RData files) on chromatin states
 
-- Simulation has code and results for simulation data
+- Simulation: has code and results for simulated data
 
-  -code – scripts to simulate transcription factors binding sites with twenty TFs and three clusters and evaluate results by applying clustering algorithm using non-homogeneous Poisson point process
+  -code: scripts to simulate transcription factors binding sites with twenty TFs and three clusters and evaluate results by applying clustering algorithm using non-homogeneous Poisson point process
   
-  -data – simulated data generated from scripts in ’code’ folder
+  -data: simulated data generated from scripts in ’code’ folder
   
-  -results – clustering results
+  -results:  clustering results on simulated data
   
-  -Neal_Alg3_funs’ has the main algorithm clustering functions.
+  -Neal_Alg3_funs: has the main algorithm clustering functions
 
 
 
@@ -46,29 +46,29 @@ DP-LGCP is independent of operating systems as it is written in R. Basic require
 Download and copy INLA folder under LGCP-package to the R library of the system. For example for a R 3.3 version, the path is  - /Library/Frameworks/R.framework/Versions/3.3/Resources/library
 
 ### Clustering on simulation data
-1.	Set working directory in R to the path up to the Simulation directory in LGCP package. E.g. -
+1.	Set working directory in R to the path up to the Simulation directory in LGCP package. E.g. -\
 setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/')
-2.	Set a variable 'workpath' in R console. E.g. on R console -
+2.	Set a variable 'workpath' in R console. E.g. on R console -\
 workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/code/”
-3. Source the INLA functions needed. e.g.
+3. Source the INLA functions needed. e.g.\
 source.all('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Neal_Alg3_funs/')
-4.	Run simulation script -
+4.	Run simulation script -\
 source("script_simulate_data.R")
-5.	Evaluate clustering result -
+5.	Evaluate clustering result -\
 source("script_run_Neal_alg3.R")
 
 ### Simulation case study – 
 •	Three 1D non-homogeneous Poisson processes with Log-Gaussian intensity were generated. Next, binding site locations of twenty transcription factors were simulated by drawing independent samples from these non-homogeneous Poisson processes. 
 
 •	Using the simulated binding site locations, we applied the clustering algorithm. The TFs were randomly assigned to any cluster at initializations. The results are shown after ten iterations –
-  - initial error rate: 0.39
-  - estimation error rate: 0
-  - overall true marginal likelihood: 76.73
-  - overall estimated marginal likelihood: 76.73
-  -	true marginal likelihood per cluster: 27.27, 14.95, 34.49
-  -	estimated marginal likelihood per cluster: 27.27, 14.95, 34.49
+  - initial error rate: 0.39\
+  - estimation error rate: 0\
+  - overall true marginal likelihood: 76.73\
+  - overall estimated marginal likelihood: 76.73\
+  -	true marginal likelihood per cluster: 27.27, 14.95, 34.49\
+  -	estimated marginal likelihood per cluster: 27.27, 14.95, 34.49\
 
-### Clustering on real data
+### Clustering on real data on distinct chromatin states
 1.	Set working directory in R to the path up to the Real directory in LGCP package. E.g. -\
 setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Real/Main_Code/')
 2.	Set a variable 'workpath' in R console. E.g. on R console-\
