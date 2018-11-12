@@ -15,7 +15,7 @@ DP-LGCP is independent of operating systems as it is written in R. Basic require
 
 ## Description of the folders
 
-- INLA: contains the R INLA library
+- 'INLA': contains the R INLA library
 - Real: contains script, data and results for transcription factors from neural stem cells  
   
   -Data:  peak files for twenty-one transcription factors, diHMM generated domain bed files for thirty domains and mm10 refseq genes. The basic input data requirements towards using the peipeline are 
