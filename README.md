@@ -53,7 +53,8 @@ source("script_simulate_data.R")
 source("script_run_Neal_alg3.R")
 
 ### Simulation case study – 
-•	Three 1D non-homogeneous Poisson processes with Log-Gaussian intensity were generated. Next, binding site locations of twenty transcription factors were simulated by drawing independent samples from these non-homogeneous Poisson processes. In Figure 1A, the solid curves denote the true intensities. 
+•	Three 1D non-homogeneous Poisson processes with Log-Gaussian intensity were generated. Next, binding site locations of twenty transcription factors were simulated by drawing independent samples from these non-homogeneous Poisson processes. 
+
 •	Using the simulated binding site locations, we applied the clustering algorithm. The TFs were randomly assigned to any cluster at initializations. The results are shown after ten iterations –
   - initial error rate: 0.39
   - estimation error rate: 0
