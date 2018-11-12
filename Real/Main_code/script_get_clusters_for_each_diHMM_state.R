@@ -59,7 +59,7 @@ compute_cluster <- function(Dstate,fpath){
   mesh = mesh_spde$mesh
   spde = mesh_spde$spde
   alpha = 1
-  n.iter = 200 # 200
+  n.iter = 20 # 200
   n.burn = 0
   init.method = "random"
   init.k = 3
