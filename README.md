@@ -28,7 +28,7 @@ DP-LGCP is independent of operating systems as it is written in R. Basic require
   
   -'Plotting_Code':   scripts to generate enrichment maps of TF peaks and TF modules in chromatin states
   
-  -'Result's:  clustering results (RData files) on chromatin states
+  -'Results':  clustering results (RData files) on chromatin states
 
 - 'Simulation': has code and results for simulated data
 
