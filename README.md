@@ -20,13 +20,19 @@ Unzip the package. Change the current directory in R to the ‘LGCP_package' fol
   
   -Main_Code – scripts to generate clusters in chromatin states
   
-  -Plotting_Code’ -  scripts to generate enrichment maps of TF peaks and TF modules in chromatin states
-4. 	‘Results’ – clustering results (RData files) on chromatin states
-- ‘Simulation’ has code and results for simulation data
-1.	‘code’ – scripts to simulate transcription factors binding sites with twenty TFs and three clusters and evaluate results by applying clustering algorithm using non-homogeneous Poisson point process
-2.	‘data’ – simulated data generated from scripts in ’code’ folder
-3.	‘results’ – clustering results
-4.	‘Neal_Alg3_funs’ has the main algorithm clustering functions.
+  -Plotting_Code -  scripts to generate enrichment maps of TF peaks and TF modules in chromatin states
+  
+  -Results – clustering results (RData files) on chromatin states
+
+- Simulation has code and results for simulation data
+
+  -code – scripts to simulate transcription factors binding sites with twenty TFs and three clusters and evaluate results by applying clustering algorithm using non-homogeneous Poisson point process
+  
+  -data – simulated data generated from scripts in ’code’ folder
+  
+  -results – clustering results
+  
+  -Neal_Alg3_funs’ has the main algorithm clustering functions.
 
 
 
