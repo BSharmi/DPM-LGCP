@@ -40,7 +40,7 @@ DP-LGCP is independent of operating systems as it is written in R. Basic require
 
 
 ### Setting INLA path 
-Download and copy INLA folder under LGCP-package to R library located in - /Library/Frameworks/R.framework/Versions/3.3/Resources/library
+Download and copy INLA folder under LGCP-package to the R library of the system. For example for a R 3.3 version, the path is  - /Library/Frameworks/R.framework/Versions/3.3/Resources/library
 
 ### Clustering on simulation data
 1.	Set working directory in R to the path up to the Simulation directory in LGCP package. E.g. -
@@ -55,12 +55,12 @@ source("script_run_Neal_alg3.R")
 ### Simulation case study – 
 •	Three 1D non-homogeneous Poisson processes with Log-Gaussian intensity were generated. Next, binding site locations of twenty transcription factors were simulated by drawing independent samples from these non-homogeneous Poisson processes. In Figure 1A, the solid curves denote the true intensities. 
 •	Using the simulated binding site locations, we applied the clustering algorithm. The TFs were randomly assigned to any cluster at initializations. The results are shown after ten iterations –
-o	initial error rate: 0.39
-o	estimation error rate: 0
-o	overall true marginal likelihood: 76.73
-o	overall estimated marginal likelihood: 76.73
-o	true marginal likelihood per cluster: 27.27, 14.95, 34.49
-o	estimated marginal likelihood per cluster: 27.27, 14.95, 34.49
+  - initial error rate: 0.39
+  - estimation error rate: 0
+  - overall true marginal likelihood: 76.73
+  - overall estimated marginal likelihood: 76.73
+  -	true marginal likelihood per cluster: 27.27, 14.95, 34.49
+  -	estimated marginal likelihood per cluster: 27.27, 14.95, 34.49
 
 ### Clustering on real data
 1.	Set working directory in R to the path up to the Real directory in LGCP package. E.g. -
