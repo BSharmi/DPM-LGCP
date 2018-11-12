@@ -66,18 +66,18 @@ source("script_run_Neal_alg3.R")
   -	estimated marginal likelihood per cluster: 27.27, 14.95, 34.49
 
 ### Clustering on real data
-1.	Set working directory in R to the path up to the Real directory in LGCP package. E.g. -
+1.	Set working directory in R to the path up to the Real directory in LGCP package. E.g. -\
 setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Real/Main_Code/')
-2.	Set a variable 'workpath' in R console. E.g. on R console-
+2.	Set a variable 'workpath' in R console. E.g. on R console-\
 workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/”
-3. Source the functions needed
+3. Source the functions needed\
 source.all('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Neal_Alg3_funs/')
 4.	Run the following scripts –
 
-    a. source("script_generate_TF_peaks_in_diHMM_states.R")
+    a. source("script_generate_TF_peaks_in_diHMM_states.R")\
 This step generates a results (in .RData) format containing the TF peaks contained within each chromatin state
 
-    b. source("script_get_clusters_for_each_diHMM_state.R")
+    b. source("script_get_clusters_for_each_diHMM_state.R")\
 This step generates clustering results within each chromatin state using results from step (a)
 
 5.	Files generated 
