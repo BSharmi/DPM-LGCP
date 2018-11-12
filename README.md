@@ -15,7 +15,7 @@ Unzip the package. Change the current directory in R to the ‘LGCP_package' fol
 
 - ‘INLA’ contains the R package
 - ‘Real’ contains script, data and some results for neural stem cells used in the paper 
-1.	‘Data’ – peak files for twenty-one transcription factors, diHMM generated domain bed files for thirty domains and mm10 refseq genes. 
+--‘Data’ – peak files for twenty-one transcription factors, diHMM generated domain bed files for thirty domains and mm10 refseq genes. 
 2. 	‘Main_Code’ – scripts to generate clusters in chromatin states
 3.	‘Plotting_Code’ -  scripts to generate enrichment maps of TF peaks and TF modules in chromatin states
 4. 	‘Results’ – clustering results (RData files) on chromatin states
