@@ -72,6 +72,7 @@ workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/”
 
 source("script_generate_TF_peaks_in_diHMM_states.R")
 source("script_get_clusters_for_each_diHMM_state.R")
+
 4.	Files generated 
 a.	Clustering results will be stored in the ‘results’ folder under ‘Real’ with the file names diHMM_celltype_cluster_domainname.RData
 b.	TF peaks in each chromatin state will be generated with names celltype_TFpeaks_diHMM_chromatinstate.RData
