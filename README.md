@@ -74,9 +74,9 @@ workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/”
 source.all('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Neal_Alg3_funs/')
 4.	Run the following scripts –
 
-source("script_generate_TF_peaks_in_diHMM_states.R")
+    a. source("script_generate_TF_peaks_in_diHMM_states.R")
 
-source("script_get_clusters_for_each_diHMM_state.R")
+    b. source("script_get_clusters_for_each_diHMM_state.R")
 
 5.	Files generated 
 
