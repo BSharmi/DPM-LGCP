@@ -16,10 +16,13 @@ DP-LGCP is independent of operating systems as it is written in R. Basic require
 ## Description of the folders
 
 
+### At a glance
 | First Header  | Second Header |
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
+
+### Detail description
 
 - 'INLA': contains the R INLA library
 - 'Real': contains script, data and results for transcription factors from neural stem cells  
