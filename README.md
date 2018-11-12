@@ -2,7 +2,7 @@
 
 Version	1.0
 
-Date		11/02/2018
+Date		11/12/2018
 
 Description	DPM-LGCP stands for Dirichlet Prior mixture for Log Gaussian Cox Process. It is a non-parametric Bayesian clustering technique based on non-homogeneous Poisson process which has been used to identify transcriptional regulatory modules in distinct chromatin states. The algorithm clusters transcription factors sharing similar intensity function (binding patterns). It has broader applications to cases requiring un-supervised clustering of large datasets with prior information on clusters.	
 Author 	Sharmi Banerjee, Honxiao Zhu, Man Tang, Xiaowei Wu, Wu Feng, David Xie	
@@ -11,18 +11,17 @@ Author 	Sharmi Banerjee, Honxiao Zhu, Man Tang, Xiaowei Wu, Wu Feng, David Xie
 DP-LGCP is independent of operating systems as it is written in R. Basic requirements for running the pipeline include installing R and the following libraries- 'INLA'(INLA 0.0-1468872408, dated 2016-07-18 (14:43:05+0100)), ‘miceadds’, ‘foreach’, ‘doParallel’, ‘igraph’, ‘caTools’, ‘ComplexHeatmap’, ‘pvclust’, ‘MASS’, ‘circlize’, ‘RColorBrewer’, ‘pheatmap’.
 
 ## Usage
-Unzip the package. Change the current directory in R to the ‘LGCP_package' folder containing the code and data organized into subfolders –
-•	‘INLA’ contains the R package
-•	‘Real’ contains script, data and some results for neural stem cells used in the paper 
-o	‘Data’ – peak files for twenty-one transcription factors, diHMM generated domain bed files for thirty domains and mm10 refseq genes. 
-o	‘main_code’ – scripts to generate clusters in chromatin states
-o	‘plotting_code’ -  scripts to generate enrichment maps of TF peaks and TF modules in chromatin states
-o	‘results’ – clustering results (RData files) on chromatin states
-•	‘Simulation’ has code and results for simulation data
-o	‘code’ – scripts to simulate transcription factors binding sites with twenty TFs and three clusters and evaluate results by applying clustering algorithm using non-homogeneous Poisson point process
-o	‘data’ – simulated data generated from scripts in ’code’ folder
-o	‘results’ – clustering results
-•	‘Neal_Alg3_funs’ has the main algorithm clustering functions.
+Unzip the package. Change the current directory in R to the ‘LGCP_package' folder containing the code and data organized into subfolders 	‘INLA’ contains the R package
+‘Real’ contains script, data and some results for neural stem cells used in the paper 
+1.	‘Data’ – peak files for twenty-one transcription factors, diHMM generated domain bed files for thirty domains and mm10 refseq genes. 
+2. 	‘Main_Code’ – scripts to generate clusters in chromatin states
+3.	‘Plotting_Code’ -  scripts to generate enrichment maps of TF peaks and TF modules in chromatin states
+4. 	‘Results’ – clustering results (RData files) on chromatin states
+‘Simulation’ has code and results for simulation data
+1.	‘code’ – scripts to simulate transcription factors binding sites with twenty TFs and three clusters and evaluate results by applying clustering algorithm using non-homogeneous Poisson point process
+2.	‘data’ – simulated data generated from scripts in ’code’ folder
+3.	‘results’ – clustering results
+4.	‘Neal_Alg3_funs’ has the main algorithm clustering functions.
 
 
 
