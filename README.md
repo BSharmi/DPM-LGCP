@@ -21,8 +21,9 @@ DP-LGCP is independent of operating systems as it is written in R. Basic require
 | ------------- | ------------- |------------- |------------- |
 | INLA  |R library contents  |Source files included with INLA package| Used in both 'Real' and Simulation'|
 | Real  | Folder containing input, scripts and output for 'Real' scenario  | 'Real|
+| Real/Data  | Folder containing input files for 'Real' scenario  | 'Real|
 
-### Detail description
+### Detailed description
 
 - 'INLA': contains the R INLA library
 - 'Real': contains script, data and results for transcription factors from neural stem cells  
