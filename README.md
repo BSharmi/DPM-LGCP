@@ -17,9 +17,9 @@ DP-LGCP is independent of operating systems as it is written in R. Basic require
 
 
 ### At a glance
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
+| Name  | Description | Contents | Scenario|
+| ------------- | ------------- |------------- |
+| INLA  |R library contents  |Source files included with INLA package| Used in both 'Real' and Simulation'
 | Content Cell  | Content Cell  |
 
 ### Detail description
