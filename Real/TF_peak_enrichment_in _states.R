@@ -14,7 +14,7 @@ cl <- makeCluster(no_cores)
 registerDoParallel(cl)
 
 ### combine all mm10 bed files converted using Liftover for all TF into a list
-filelist<-list.files(paste0(workpath,"Real/data/"),(pattern = "peaks"))
+filelist<-list.files(paste0(workpath,"Real/data/"),(pattern = ".txt"))
 combined.TF.chrom<-vector("list",length(filelist))
 combined.TF.regionmeans<-vector("list",length(filelist))
 combined.TF.region<-vector("list",length(filelist))
