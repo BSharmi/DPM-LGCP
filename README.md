@@ -19,7 +19,7 @@ DP-LGCP is independent of operating systems as it is written in R. Basic require
 ### At a glance
 | Name  | Description | Scenario|
 | ------------- |------------- |------------- |
-| INLA  |Source files included with INLA package| Used in both 'Real' and Simulation'|
+| INLA  |Source files included with INLA package| Used in both 'Real' and 'Simulation'|
 | Real  | Contains input, scripts and output for 'Real' scenario  | 'Real|
 | Real/Data  | Contains input files for 'Real' scenario  | 'Real'|
 | Real/Main_code  | Contains R scripts for clustering in the 'Real' scenario  | 'Real'|
