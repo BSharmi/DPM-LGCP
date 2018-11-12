@@ -53,7 +53,7 @@ save(dom_list_chr, file = paste0(workpath,"Real/results/diHMM_domain_states.RDat
 
 
 ## read TF peak files
-filelist<-list.files(paste0(workpath,"Real/data/"),(pattern = "peaks"))
+filelist<-list.files(paste0(workpath,"Real/data/"),(pattern = ".txt"))
 combined.TF.chrom<-vector("list",length(filelist))
 combined.TF.regionmeans<-vector("list",length(filelist))
 combined.TF.region<-vector("list",length(filelist))
