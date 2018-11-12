@@ -45,7 +45,7 @@ Download and copy INLA folder under LGCP-package to the R library of the system.
 ### Clustering on simulation data
 1.	Set working directory in R to the path up to the Simulation directory in LGCP package. E.g. -
 setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/')
-2.	Set work path in R console. E.g. -
+2.	Set a variable 'workpath' in R console. E.g. on R console -
 workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/code/”
 3.	Run simulation script -
 source("script_simulate_data.R")
@@ -66,7 +66,7 @@ source("script_run_Neal_alg3.R")
 ### Clustering on real data
 1.	Set working directory in R to the path up to the Real directory in LGCP package. E.g. -
 setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Real/Main_Code/')
-2.	Set work path in R console. E.g. -
+2.	Set a variable 'workpath' in R console. E.g. on R console-
 workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/”
 3.	Run the following scripts –
 source("script_generate_TF_peaks_in_diHMM_states.R")
