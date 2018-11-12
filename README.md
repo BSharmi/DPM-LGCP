@@ -10,7 +10,8 @@ Author 	Sharmi Banerjee, Honxiao Zhu, Man Tang, Xiaowei Wu, Wu Feng, David Xie
 ## System Requirements
 DP-LGCP is independent of operating systems as it is written in R. Basic requirements for running the pipeline include installing R and the following libraries- 'INLA'(INLA 0.0-1468872408, dated 2016-07-18 (14:43:05+0100)), ‘miceadds’, ‘foreach’, ‘doParallel’, ‘igraph’, ‘caTools’, ‘ComplexHeatmap’, ‘pvclust’, ‘MASS’, ‘circlize’, ‘RColorBrewer’, ‘pheatmap’.
 
-## Usage
+## Description of the folders
+
 - INLA contains the R package
 - Real contains script, data and some results for neural stem cells used in the paper 
   
