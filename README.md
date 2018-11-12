@@ -47,9 +47,11 @@ Download and copy INLA folder under LGCP-package to the R library of the system.
 setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/')
 2.	Set a variable 'workpath' in R console. E.g. on R console -
 workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/code/”
-3.	Run simulation script -
+3. Source the functions needed
+source.all('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Neal_Alg3_funs/')
+4.	Run simulation script -
 source("script_simulate_data.R")
-4.	Evaluate clustering result -
+5.	Evaluate clustering result -
 source("script_run_Neal_alg3.R")
 
 ### Simulation case study – 
@@ -68,17 +70,17 @@ source("script_run_Neal_alg3.R")
 setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Real/Main_Code/')
 2.	Set a variable 'workpath' in R console. E.g. on R console-
 workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/”
-3.	Run the following scripts –
-
+3. Source the functions needed
 source.all('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Neal_Alg3_funs/')
+4.	Run the following scripts –
 
 source("script_generate_TF_peaks_in_diHMM_states.R")
 
 source("script_get_clusters_for_each_diHMM_state.R")
 
-4.	Files generated 
-a.	Clustering results will be stored in the ‘results’ folder under ‘Real’ with the file names diHMM_celltype_cluster_domainname.RData
-b.	TF peaks in each chromatin state will be generated with names celltype_TFpeaks_diHMM_chromatinstate.RData
+5.	Files generated 
+    a.	Clustering results will be stored in the ‘results’ folder under ‘Real’ with the file names diHMM_celltype_cluster_domainname.RData
+    b.	TF peaks in each chromatin state will be generated with names celltype_TFpeaks_diHMM_chromatinstate.RData
 
 ### Plotting enrichment heat-maps
 1.	Set working directory in R to the path up to the Real directory in LGCP package. E.g. -
