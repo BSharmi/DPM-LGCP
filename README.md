@@ -80,7 +80,7 @@ b.	TF peaks in each chromatin state will be generated with names celltype_TFpeak
 setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Real/Plotting_Code/')
 2.	Set work path in R console. E.g. -
 workpath = “/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/”
-3.	Run the following scripts to generate heat map in Figure 2(a) in main paper
+3.	Run the following scripts to generate heat map of TF peaks within different chromatin states
 source("TF_peak_enrichment_in _states.R")
 
 
