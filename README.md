@@ -70,6 +70,8 @@ setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Real/Main_Code/')
 workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/”
 3.	Run the following scripts –
 
+source.all('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Neal_Alg3_funs/')
+
 source("script_generate_TF_peaks_in_diHMM_states.R")
 
 source("script_get_clusters_for_each_diHMM_state.R")
