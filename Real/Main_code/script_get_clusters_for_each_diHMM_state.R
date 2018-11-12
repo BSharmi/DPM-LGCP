@@ -102,7 +102,6 @@ compute_cluster <- function(Dstate,fpath){
   new.sample = pool_list(sample.mat, sample.len, clust.est)
   mean.zvalue = est_inten_list_v2(new.sample, new.ns, range(tgrid), mesh, spde, mlik1 = FALSE, config1 = FALSE, zgrid.eval = TRUE, tgrid = tgrid, save_result = FALSE, take_sample = FALSE, verbose = FALSE)
   
-  
   # save estamt, g.est
   gsymbol_g.est <- list(est.mat, g.est,mean.zvalue,res)  
   #return(est.mat)
@@ -112,9 +111,9 @@ compute_cluster <- function(Dstate,fpath){
   save(gsymbol_g.est, file = paste0(workpath,"Real/results/diHMM_NSC_res_TFcluster_",Dstate,".RData"))
 }
 
-
 # load state names
 Dstate_all<-get(load(paste0(workpath,"Real/results/diHMM_state_names.RData")))
 
+# run clustering for different chromatin states
 foreach (i_state = 1 : length(Dstate_all), .verbose=TRUE) %dopar% {
   compute_cluster(Dstate_all[i_state],fpath)}  
