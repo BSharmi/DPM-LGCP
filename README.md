@@ -11,13 +11,15 @@ Author 	Sharmi Banerjee, Honxiao Zhu, Man Tang, Xiaowei Wu, Wu Feng, David Xie
 DP-LGCP is independent of operating systems as it is written in R. Basic requirements for running the pipeline include installing R and the following libraries- 'INLA'(INLA 0.0-1468872408, dated 2016-07-18 (14:43:05+0100)), ‘miceadds’, ‘foreach’, ‘doParallel’, ‘igraph’, ‘caTools’, ‘ComplexHeatmap’, ‘pvclust’, ‘MASS’, ‘circlize’, ‘RColorBrewer’, ‘pheatmap’.
 
 ## Usage
-Unzip the package. Change the current directory in R to the ‘LGCP_package' folder containing the code and data organized into subfolders 	‘INLA’ contains the R package
-‘Real’ contains script, data and some results for neural stem cells used in the paper 
+Unzip the package. Change the current directory in R to the ‘LGCP_package' folder containing the code and data organized into subfolders 	
+
+- ‘INLA’ contains the R package
+- ‘Real’ contains script, data and some results for neural stem cells used in the paper 
 1.	‘Data’ – peak files for twenty-one transcription factors, diHMM generated domain bed files for thirty domains and mm10 refseq genes. 
 2. 	‘Main_Code’ – scripts to generate clusters in chromatin states
 3.	‘Plotting_Code’ -  scripts to generate enrichment maps of TF peaks and TF modules in chromatin states
 4. 	‘Results’ – clustering results (RData files) on chromatin states
-‘Simulation’ has code and results for simulation data
+- ‘Simulation’ has code and results for simulation data
 1.	‘code’ – scripts to simulate transcription factors binding sites with twenty TFs and three clusters and evaluate results by applying clustering algorithm using non-homogeneous Poisson point process
 2.	‘data’ – simulated data generated from scripts in ’code’ folder
 3.	‘results’ – clustering results
@@ -32,7 +34,7 @@ Extract INLA compressed file and copy INLA folder under LGCP-package to R librar
 1.	Set working directory in R to the path up to the Simulation directory in LGCP package. E.g. -
 setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/')
 2.	Set work path in R console. E.g. -
-workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/ Simulation/ code/”
+workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/code/”
 3.	Run simulation script -
 source("script_simulate_data.R")
 4.	Evaluate clustering result -
@@ -50,7 +52,7 @@ o	estimated marginal likelihood per cluster: 27.27, 14.95, 34.49
 
 ### Clustering on real data
 1.	Set working directory in R to the path up to the Real directory in LGCP package. E.g. -
-setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Real/ main_code/')
+setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Real/Main_Code/')
 2.	Set work path in R console. E.g. -
 workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/”
 3.	Run the following scripts –
@@ -62,7 +64,7 @@ b.	TF peaks in each chromatin state will be generated with names celltype_TFpeak
 
 ### Plotting enrichment heat-maps
 1.	Set working directory in R to the path up to the Real directory in LGCP package. E.g. -
-setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Real/ plotting_code/')
+setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Real/Plotting_Code/')
 2.	Set work path in R console. E.g. -
 workpath = “/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/”
 3.	Run the following scripts to generate heat map in Figure 2(a) in main paper
