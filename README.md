@@ -41,7 +41,7 @@ Unzip the package. Change the current directory in R to the ‘LGCP_package' fol
 
 
 ### Setting INLA path 
-Extract INLA compressed file and copy INLA folder under LGCP-package to R library located in - /Library/Frameworks/R.framework/Versions/3.3/Resources/library
+Download and copy INLA folder under LGCP-package to R library located in - /Library/Frameworks/R.framework/Versions/3.3/Resources/library
 
 ### Clustering on simulation data
 1.	Set working directory in R to the path up to the Simulation directory in LGCP package. E.g. -
