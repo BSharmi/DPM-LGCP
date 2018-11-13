@@ -8,9 +8,9 @@ library(igraph)
 library(caTools)
 
 ## change work path as needed. It should include full path upto LGCP_package
-workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/"
+#workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/"
 load(paste(workpath, "Simulation/data/lgcp_simu_data_v0.RData", sep = "/"))
-source.all(path = paste(workpath, "Neal_Alg3_funs", sep = "/"), print.source = FALSE)
+#source.all(path = paste(workpath, "Neal_Alg3_funs", sep = "/"), print.source = FALSE)
 
 
 # Get mesh and spde setup
