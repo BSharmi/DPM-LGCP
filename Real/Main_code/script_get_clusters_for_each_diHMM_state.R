@@ -131,4 +131,6 @@ for (i_state in 1:length(Dstate_all)){
   clu <- components(clusters_from_all_windows)
   clusters_from_all_states[[i_state]] = groups(clu)
 }
-                
+
+# view the clusters in R console
+clusters_from_all_states
