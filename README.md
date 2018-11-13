@@ -69,7 +69,7 @@ setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/')
 workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/code/”
 3. Source the INLA functions needed. e.g.\
 source.all('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Neal_Alg3_funs/')\
-source.all('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/code/lgcp_simu_funs_final.R')
+source('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/code/lgcp_simu_funs_final.R')
 4.	Run simulation script -\
 source("script_simulate_data.R")
 5.	Evaluate clustering result -\
