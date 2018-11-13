@@ -76,7 +76,9 @@ source("script_simulate_data.R")
 source("script_run_Neal_alg3.R")
 
 ### Simulation case study – 
-•	Three 1D non-homogeneous Poisson processes with Log-Gaussian intensity were generated. Next, binding site locations of twenty transcription factors were simulated by drawing independent samples from these non-homogeneous Poisson processes. 
+•	Three 1D non-homogeneous Poisson processes with Log-Gaussian intensity were generated. Next, binding site locations of twenty transcription factors were simulated by drawing independent samples from these non-homogeneous Poisson processes 
+
+•	The user does not need to provide any additional input. Simulation input data is put under the folder ‘Simulation/data’ folder with the name ‘lgcp_simu_data_v0.RData’. The user can generate her/his own simulation data by changing parameters in the script ‘script_simulate_data.R’ under ‘Simulation/code/’
 
 •	Using the simulated binding site locations, we applied the clustering algorithm. The TFs were randomly assigned to any cluster at initializations. The results are shown after ten iterations –
   - initial error rate: 0.39
