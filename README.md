@@ -59,10 +59,10 @@ DP-LGCP is independent of operating systems as it is written in R. Basic require
 
 
 
-### Setting INLA path 
+## Setting INLA path 
 Download and copy INLA folder under LGCP-package to the R library of the system. For example for a R 3.3 version, the path is  - /Library/Frameworks/R.framework/Versions/3.3/Resources/library
 
-### Clustering on simulation data
+## Clustering on simulation data
 1.	Set working directory in R to the path up to the Simulation directory in LGCP package. E.g. -\
 setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/')
 2.	Set a variable 'workpath' in R console. E.g. on R console -\
@@ -85,7 +85,7 @@ source("script_run_Neal_alg3.R")
   -	true marginal likelihood per cluster: 27.27, 14.95, 34.49
   -	estimated marginal likelihood per cluster: 27.27, 14.95, 34.49
 
-### Clustering on real data within distinct chromatin states
+## Clustering on real data within distinct chromatin states
 1.	Set working directory in R to the path up to the Real directory in LGCP package. E.g. -\
 setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Real/Main_Code/')
 2.	Set a variable 'workpath' in R console. E.g. on R console-\
