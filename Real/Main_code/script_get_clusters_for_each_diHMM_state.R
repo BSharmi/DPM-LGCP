@@ -118,7 +118,7 @@ Dstate_all<-get(load(paste0(workpath,"Real/results/diHMM_state_names.RData")))
 foreach (i_state = 1 : length(Dstate_all), .verbose=TRUE) %dopar% {
   compute_cluster(Dstate_all[i_state],fpath)}  
                  
-# output the clustering results for each state in al list. 
+# output the clustering results for each state in a list. 
 clusters_from_all_states = vector('list',length(Dstate_all))
 names(clusters_from_all_states) = Dstate_all
 for (i_state in 1:length(Dstate_all)){
