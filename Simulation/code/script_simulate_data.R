@@ -1,8 +1,8 @@
 # generate independent samples from 1D non-homogeneous Poisson process with log-Gaissian intensity
 # ------------------------------------------------------------------------------------------------
-rm(list = ls())
-workpath = "/Users/bsharmi6/Documents/R/BI_ChIPSeq/SharmiWork"
-source(paste(workpath, "code_simulate_naive_data/lgcp_simu_funs_final.R", sep = "/"))
+#rm(list = ls())
+#workpath = "/Users/bsharmi6/Documents/R/BI_ChIPSeq/SharmiWork"
+#source(paste(workpath, "code_simulate_naive_data/lgcp_simu_funs_final.R", sep = "/"))
 
 TT = c(0, 10)
 tgrid = seq(TT[1], TT[2], length = 50)
