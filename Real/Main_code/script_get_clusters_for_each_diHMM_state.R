@@ -123,7 +123,7 @@ clusters_from_all_states = vector('list',length(Dstate_all))
 names(clusters_from_all_states) = Dstate_all
 for (i_state in 1:length(Dstate_all)){
   ## load clustering result
-  gsymbol_g.est=get(load(paste0(workpath,"Real/results/diHMM_NSC_res_TFcluster_", states[i_state],"_500_1750.RData"))) 
+  gsymbol_g.est=get(load(paste0(workpath,"Real/results/diHMM_NSC_res_TFcluster_", Dstate_all[i_state],".RData"))) 
   ## get cluster res which has all clustering information 
   res=gsymbol_g.est[[4]]
   ## get cluster matrices for all windows
