@@ -117,3 +117,18 @@ Dstate_all<-get(load(paste0(workpath,"Real/results/diHMM_state_names.RData")))
 # run clustering for different chromatin states
 foreach (i_state = 1 : length(Dstate_all), .verbose=TRUE) %dopar% {
   compute_cluster(Dstate_all[i_state],fpath)}  
+                 
+# output the clustering results for each state in al list. 
+clusters_from_all_states = vector('list',length(Dstate_all))
+names(clusters_from_all_states) = Dstate_all
+for (i_state in 1:length(Dstate_all)){
+  ## load clustering result
+  gsymbol_g.est=get(load(paste0(workpath,"Real/results/diHMM_NSC_res_TFcluster_", states[i_state],"_500_1750.RData"))) 
+  ## get cluster res which has all clustering information 
+  res=gsymbol_g.est[[4]]
+  ## get cluster matrices for all windows
+  clusters_from_all_windows <-gsymbol_g.est[[2]]
+  clu <- components(clusters_from_all_windows)
+  clusters_from_all_states[[i_state]] = groups(clu)
+}
+                
