@@ -63,16 +63,16 @@ DP-LGCP is independent of operating systems as it is written in R. Basic require
 Download and copy INLA folder under LGCP-package to the R library of the system. For example for a R 3.3 version, the path is  - /Library/Frameworks/R.framework/Versions/3.3/Resources/library
 
 ## Clustering on simulation data
-1.	Set working directory in R to the path up to the Simulation directory in LGCP package. E.g. -\
+1.	Set working directory in R to the path up to the Simulation directory in LGCP package. E.g. (on R console) -\
 setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/')
-2.	Set a variable 'workpath' in R console. E.g. on R console -\
+2.	Set a variable 'workpath' in R console. E.g. (on R console) -\
 workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/code/”
-3. Source the INLA functions needed. e.g.\
+3. Source the INLA functions needed. E.g.(on R console)\
 source.all('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Neal_Alg3_funs/')\
 source('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/code/lgcp_simu_funs_final.R')
-4.	Run simulation script -\
+4.	Run simulation script. E.g. (on R console) -\
 source("script_simulate_data.R")
-5.	Evaluate clustering result -\
+5.	Evaluate clustering result. E.g. (on R console)\
 source("script_run_Neal_alg3.R")
 
 ### Simulation case study – 
@@ -89,13 +89,13 @@ source("script_run_Neal_alg3.R")
   -	estimated marginal likelihood per cluster: 27.27, 14.95, 34.49
 
 ## Clustering on real data within distinct chromatin states
-1.	Set working directory in R to the path up to the Real directory in LGCP package. E.g. -\
+1.	Set working directory in R to the path up to the Real directory in LGCP package. E.g. (on R console)-\
 setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Real/Main_Code/')
-2.	Set a variable 'workpath' in R console. E.g. on R console-\
+2.	Set a variable 'workpath' in R console. E.g. (on R console) -\
 workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/”
-3. Source the INLA functions needed e.g.\
+3. Source the INLA functions needed E.g. (on R console)\
 source.all('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Neal_Alg3_funs/')
-4.	Run the following scripts –
+4.	Run the following scripts (on R console)–
 
     a. source("script_generate_TF_peaks_in_diHMM_states.R")\
 This step generates a results (in .RData) format containing the TF peaks contained within each chromatin state
@@ -110,11 +110,11 @@ This step generates clustering results within each chromatin state using results
     b.	TF peaks in each chromatin state will be generated with names celltype_TFpeaks_diHMM_chromatinstate.RData
 
 ### Plotting enrichment heat-maps
-1.	Set working directory in R to the path up to the Real directory in LGCP package. E.g. -
+1.	Set working directory in R to the path up to the Real directory in LGCP package. E.g.(on R console) -
 setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Real/Plotting_Code/')
-2.	Set work path in R console. E.g. -
+2.	Set work path in R console. E.g. (on R console)-
 workpath = “/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/”
-3.	Run the following scripts to generate heat map of TF peaks within different chromatin states
+3.	Run the following scripts to generate heat map of TF peaks within different chromatin states. E.g. (on R console)\
 source("TF_peak_enrichment_in _states.R")
 
 
