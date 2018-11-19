@@ -110,9 +110,9 @@ This step generates clustering results within each chromatin state using results
     b.	TF peaks in each chromatin state will be generated with names celltype_TFpeaks_diHMM_chromatinstate.RData
 
 ### Plotting enrichment heat-maps
-1.	Set working directory in R to the path up to the Real directory in LGCP package. E.g.(on R console) -
+1.	Set working directory in R to the path up to the Real directory in LGCP package. E.g.(on R console) -\
 setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Real/Plotting_Code/')
-2.	Set work path in R console. E.g. (on R console)-
+2.	Set work path in R console. E.g. (on R console)-\
 workpath = “/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/”
 3.	Run the following scripts to generate heat map of TF peaks within different chromatin states. E.g. (on R console)\
 source("TF_peak_enrichment_in _states.R")
