@@ -117,7 +117,7 @@ source.all('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Neal_Alg3_fu
 ```
 This step generates a results (in .RData) format containing the TF peaks contained within each chromatin state
 ```
-   source("script_get_clusters_for_each_diHMM_state.R")\
+   source("script_get_clusters_for_each_diHMM_state.R")
 ```
 This step generates clustering results within each chromatin state using results from step (a)
 
