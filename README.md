@@ -99,19 +99,26 @@ source("script_run_Neal_alg3.R")
   -	estimated marginal likelihood per cluster: 27.27, 14.95, 34.49
 
 ## Clustering on real data within distinct chromatin states
-1.	Set working directory in R to the path up to the Real directory in LGCP package. E.g. (on R console)-\
+1.	Set working directory in R to the path up to the Real directory in LGCP package. E.g. (on R console)-
+```
 setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Real/Main_Code/')
-2.	Set a variable 'workpath' in R console. E.g. (on R console) -\
+```
+2.	Set a variable 'workpath' in R console. E.g. (on R console) -
+```
 workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/”
-3. Source the INLA functions needed E.g. (on R console)\
+```
+3. Source the INLA functions needed E.g. (on R console)
+```
 source.all('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Neal_Alg3_funs/')
+```
 4.	Run the following scripts (on R console)–
-
+```
     a. source("script_generate_TF_peaks_in_diHMM_states.R")\
 This step generates a results (in .RData) format containing the TF peaks contained within each chromatin state
 
     b. source("script_get_clusters_for_each_diHMM_state.R")\
 This step generates clustering results within each chromatin state using results from step (a)
+```
 
 5.	Files generated 
 
@@ -120,12 +127,18 @@ This step generates clustering results within each chromatin state using results
     b.	TF peaks in each chromatin state will be generated with names celltype_TFpeaks_diHMM_chromatinstate.RData
 
 ### Plotting enrichment heat-maps
-1.	Set working directory in R to the path up to the Real directory in LGCP package. E.g.(on R console) -\
+1.	Set working directory in R to the path up to the Real directory in LGCP package. E.g.(on R console) -
+```
 setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Real/Plotting_Code/')
-2.	Set work path in R console. E.g. (on R console)-\
+```
+2.	Set work path in R console. E.g. (on R console)-
+```
 workpath = “/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/”
-3.	Run the following scripts to generate heat map of TF peaks within different chromatin states. E.g. (on R console)\
+```
+3.	Run the following scripts to generate heat map of TF peaks within different chromatin states. E.g. (on R console)
+```
 source("TF_peak_enrichment_in _states.R")
+```
 
 
 ## Contact
