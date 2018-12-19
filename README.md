@@ -64,7 +64,9 @@ Download and copy INLA folder under LGCP-package to the R library of the system.
 
 ## Clustering on simulation data
 1.	Set working directory in R to the path up to the Simulation directory in LGCP package. E.g. (on R console) -\
+```
 setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/')
+```
 2.	Set a variable 'workpath' in R console. E.g. (on R console) -\
 workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/code/”
 3. Source the INLA functions needed. E.g.(on R console)\
