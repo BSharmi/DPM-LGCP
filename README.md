@@ -63,19 +63,27 @@ DP-LGCP is independent of operating systems as it is written in R. Basic require
 Download and copy INLA folder under LGCP-package to the R library of the system. For example for a R 3.3 version, the path is  - /Library/Frameworks/R.framework/Versions/3.3/Resources/library
 
 ## Clustering on simulation data
-1.	Set working directory in R to the path up to the Simulation directory in LGCP package. E.g. (on R console) -\
+1.	Set working directory in R to the path up to the Simulation directory in LGCP package. E.g. (on R console) -
 ```
 setwd('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/')
 ```
-2.	Set a variable 'workpath' in R console. E.g. (on R console) -\
+2.	Set a variable 'workpath' in R console. E.g. (on R console) -
+```
 workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/code/”
-3. Source the INLA functions needed. E.g.(on R console)\
+```
+3. Source the INLA functions needed. E.g.(on R console)
+```
 source.all('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Neal_Alg3_funs/')\
 source('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/code/lgcp_simu_funs_final.R')
-4.	Run simulation script. E.g. (on R console) -\
+```
+4.	Run simulation script. E.g. (on R console) -
+```
 source("script_simulate_data.R")
-5.	Evaluate clustering result. E.g. (on R console)\
+```
+5.	Evaluate clustering result. E.g. (on R console)
+```
 source("script_run_Neal_alg3.R")
+```
 
 ### Simulation case study – 
 •	Three 1D non-homogeneous Poisson processes with Log-Gaussian intensity were generated. Next, binding site locations of twenty transcription factors were simulated by drawing independent samples from these non-homogeneous Poisson processes 
