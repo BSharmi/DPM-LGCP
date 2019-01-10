@@ -73,7 +73,7 @@ workpath = "/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/c
 ```
 3. Source the INLA functions needed. E.g.(on R console)
 ```
-source.all('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Neal_Alg3_funs/')\
+source.all('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Neal_Alg3_funs/')
 source('/Users/sharmibanerjee/Documents/Summer2017/LGCP_package/Simulation/code/lgcp_simu_funs_final.R')
 ```
 4.	Run simulation script. E.g. (on R console) -
